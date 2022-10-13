@@ -23,7 +23,7 @@ export default function Home() {
             <div className="">
               <SubTitle text={"Arézo"} dark={true} />
               <div className="m-4" />
-              <PageTitle text={"Amplifying the desire to feel great"} dark={true} />
+              <PageTitle text={"Amplifying the desire to feel great TEST"} dark={true} />
               <div className="m-4" />
               <DDLink text={"See Case Study"} href = "#" dark={true} />
             </div>

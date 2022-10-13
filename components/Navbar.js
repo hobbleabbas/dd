@@ -66,7 +66,7 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                            item.current ? 'text-white' : 'text-gray-200 hover:underline underline-offset-8 transition delay-100 hover:text-white',
+                            item.current ? 'text-white underline underline-offset-8' : 'text-gray-200 hover:underline underline-offset-8 transition delay-100 hover:text-white',
                             'px-3 py-2 rounded-md text-sm font-medium uppercase'
                         )}
                         aria-current={item.current ? 'page' : undefined}

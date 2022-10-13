@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['system-ui'],
+    }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

@@ -1,17 +1,21 @@
 import Image from "next/image";
 import { Card } from "../components/Card";
+import Footer from "../components/Footer";
 import { DDLink } from "../components/Link";
 import Navbar from "../components/Navbar";
 import { MainTitle, PageTitle, SubTitle } from "../components/Title";
 import Homesplash from "../public/homesplash.png"
+import Indexsplash from "../public/indexsplash.png"
+import Indexsplash2 from "../public/indexsplash2.png"
+import Indexsplash3 from "../public/indexsplash3.png"
 
 
 export default function Home() {
 
-  const style={
+  const style= {
     backgroundImage: `url(${Homesplash.src})`,
-    width: '100%',
-    height: '100%',
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
   }
 
   return (
@@ -23,9 +27,9 @@ export default function Home() {
             <div className="">
               <SubTitle text={"Arézo"} dark={true} />
               <div className="m-4" />
-              <PageTitle text={"Amplifying the desire to feel great TEST"} dark={true} />
+              <PageTitle text={"Amplifying the desire to feel great"} dark={true} />
               <div className="m-4" />
-              <DDLink text={"See Case Study"} href = "#" dark={true} />
+              <DDLink text={"See Case Study"} href = "#" dark={true} defaultUnderlined={true} />
             </div>
           </div>
         </div>
@@ -37,7 +41,7 @@ export default function Home() {
           <div className="text-center px-36 pb-16">
             <PageTitle text = "digital dash is an independant Toronto-based strategy, design & communications company." />
             <div className="m-12" />
-            <DDLink text={"Learn about us"} href="/about" />
+            <DDLink text={"Learn about us"} href="/about" defaultUnderlined={true} />
           </div>
         </div>
         <div className="grid grid-cols-2 gap-8">
@@ -72,9 +76,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div style={{width: '100%', height: '100%', position: 'relative'}}>
+      <div style={{
+          backgroundImage: `url(${Indexsplash.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}>
         <div className="h-screen w-full">
-          <Image className="w-full h-auto" layout='fill' objectFit='contain'  src="/indexsplash.png" />
         </div>
       </div>
 
@@ -85,7 +92,7 @@ export default function Home() {
             <div className="mb-8" />
             <PageTitle text = "Jewelry That Reflects Who You Are & Where You Are From" />
             <div className="m-12" />
-            <DDLink text={"See case study"} href="/about" />
+            <DDLink text={"See case study"} href="/about" defaultUnderlined={true} />
           </div>
         </div>
         <div className="grid grid-cols-2 gap-8">
@@ -121,9 +128,12 @@ export default function Home() {
       </div>
 
 
-      <div style={{width: '100%', height: '100%', position: 'relative'}}>
+      <div style={{
+          backgroundImage: `url(${Indexsplash2.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}>
         <div className="h-screen w-full">
-          <Image className="w-full h-auto" layout='fill' objectFit='contain'  src="/indexsplash2.png" />
         </div>
       </div>
 
@@ -135,14 +145,17 @@ export default function Home() {
             <div className="mb-8" />
             <PageTitle text = "Jewelry That Reflects Who You Are & Where You Are From" />
             <div className="m-12" />
-            <DDLink text={"See case study"} href="/about" />
+            <DDLink text={"See case study"} href="/about" defaultUnderlined={true} />
           </div>
         </div>
       </div>
 
-      <div className="w-full h-full relative">
+      <div style={{
+          backgroundImage: `url(${Indexsplash3.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}>
         <div className="h-screen w-full">
-          <Image className="w-full h-auto" layout='fill' objectFit='contain'  src="/indexsplash3.png" />
         </div>
       </div>
 
@@ -152,10 +165,12 @@ export default function Home() {
           <div className="text-center px-48 pb-16">
             <PageTitle text = "We love to look beyond the surface of things" />
             <div className="m-12" />
-            <DDLink text={"Minds of DD"} href="/humans" />
+            <DDLink text={"Minds of DD"} href="/humans" defaultUnderlined={true} />
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
 
   )

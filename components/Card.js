@@ -10,7 +10,7 @@ export function Card({ dark, title, sub_title, link_text, link_href, image_src }
             <div className="m-3" />
             <MainTitle text={title} />
             <div className="m-4" />
-            <DDLink text={link_text} href={link_href} />
+            <DDLink text={link_text} href={link_href} defaultUnderlined={true} />
         </div>
     )
 }

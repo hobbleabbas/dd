@@ -13,3 +13,7 @@ export function PageTitle({ text, dark }) {
 export function SubTitle({ text, dark }) {
     return <p className={classNames(dark ? "text-white" : "text-slate-800", "uppercase font-medium text-md")}>{ text }</p>
 }
+
+export function LightSubTitle({ text, dark }) {
+    return <p className={classNames(dark ? "text-white" : "text-slate-800", "uppercase font-regular text-md")}>{ text }</p>
+}

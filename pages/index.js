@@ -22,7 +22,7 @@ export default function Home() {
     <div>
       <div className="bg-fixed" style={style}>
         <div className="w-screen h-screen grid grid-cols-5">
-          <Navbar />
+          <Navbar dark={true} />
           <div className="-mt-96 col-span-2 text-center items-center flex p-8">
             <div className="">
               <SubTitle text={"Arézo"} dark={true} />

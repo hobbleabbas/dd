@@ -23,7 +23,7 @@ export default function Navbar({ dark }) {
   ]
 
   return (
-    <Disclosure as="nav" className={classNames(dark ? "bg-black" : "", "col-span-full relative")}>
+    <Disclosure as="nav" className={classNames(dark ? "" : "text-black", "col-span-full relative")}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -31,14 +31,25 @@ export default function Navbar({ dark }) {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src="/logos/dark.png"
                     alt="Your Company"
                   />
-                  <img
-                    className="hidden mt-1 h-24 w-auto lg:block"
-                    src="/logos/light.png"
-                    alt="Your Company"
-                  />
+                  {dark ? 
+
+                    <img
+                      className="hidden mt-1 h-24 w-auto lg:block"
+                      src="/logos/light.png"
+                      alt="Digital Dash"
+                    />
+
+                    :
+
+                    <img
+                      className="hidden mt-1 h-24 w-auto lg:block"
+                      src="/logos/dark.png"
+                      alt="Digital Dash"
+                    />
+                  }
                 </div>
               <div className="flex items-center">
                 <div className="flex">
@@ -64,7 +75,7 @@ export default function Navbar({ dark }) {
                             key={item.name}
                             href={item.href}
                             className={classNames(
-                                item.current ? 'text-white underline underline-offset-8' : 'text-gray-200 hover:underline underline-offset-8 transition delay-100 hover:text-white',
+                                (item.current && dark) ? 'text-white underline underline-offset-8' : (!item.current && dark) ? 'text-gray-200 hover:underline underline-offset-8 transition delay-100 hover:text-white' : (item.current && !dark) ? "underline underline-offset-8" : (!item.current && !dark) ? "hover:underline underline-offset-8 delay-50 hover:text-gray-500" : "",
                                 'px-3 py-2 rounded-md text-sm font-medium uppercase'
                             )}
                             aria-current={item.current ? 'page' : undefined}

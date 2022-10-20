@@ -33,7 +33,8 @@ export default function About() {
         <div className="bg-black h-full text-white">
             <Navbar dark={true} />
             <div className="py-48 flex flex-col items-center w-full justify-center align-center">
-                <img src={"/aboutus.png"} className="w-1/2 h-auto" />
+                <p className="text-xl text-gray-400 uppercase font-semibold mb-8">About Us</p>
+                <img src={"/aboutus.png"} className="w-3/4 h-auto" />
             </div>
             <div className="px-16">
                 {

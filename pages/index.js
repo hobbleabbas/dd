@@ -38,7 +38,7 @@ export default function Home() {
       {/** Learn about us section */}
       <div className="p-24">
         <div>
-          <div className="text-center px-36 pb-16">
+          <div className="text-center px-36 py-16">
             <PageTitle text = "digital dash is an independant Toronto-based strategy, design & communications company." />
             <div className="m-12" />
             <DDLink text={"Learn about us"} href="/about" defaultUnderlined={true} />

@@ -24,7 +24,7 @@ export default function Navbar({ dark }) {
   ]
 
   return (
-    <Disclosure as="nav" className={classNames(dark ? "" : "text-black", "col-span-full relative")}>
+    <Disclosure as="nav" className={classNames(dark ? "" : "text-black", "m-8 col-span-full relative")}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

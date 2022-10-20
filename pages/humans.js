@@ -69,7 +69,7 @@ export default function Humans() {
             </div>
             <div className="grid md:grid-cols-2 gap-4 p-16">
                 {people.map((person, index)=>(
-                    <div className="px-4 sm:px-16 md:px-32 lg:px-36 py-8">
+                    <div key={index} className="px-4 sm:px-16 md:px-32 lg:px-36 py-8">
                         <PersonCard
                             key={index}
                             name = {person.name}

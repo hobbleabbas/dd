@@ -127,7 +127,7 @@ export default function Work() {
                 <div className="grid grid-cols-2 gap-y-32 p-16">
                 {
                     aboutParagraphs.map((paragraph, index) => (
-                        <div className="grid grid-cols-8 gap-0 justify-left">
+                        <div key={index} className="grid grid-cols-8 gap-0 justify-left">
                             <p className="text-gray-500 text-md text-lg font-semibold col-span-1">{index + 1}</p>
                             <div className="flex justify-start flex-col col-span-7">
                                 <div>

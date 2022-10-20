@@ -15,6 +15,7 @@ export default function Navbar({ dark }) {
 
   const navigation = [
     { name: 'Home', href: '/', current: path == "/" },
+    { name: 'Services', href: '/services', current: path == "/services" },
     { name: 'Work', href: '/work', current: path == "/work" },
     { name: 'About', href: '/about', current: path == "/about" },
     { name: 'Humans', href: '/humans', current: path == "/humans" },
@@ -37,7 +38,7 @@ export default function Navbar({ dark }) {
                   {dark ? 
 
                     <img
-                      className="hidden mt-1 h-24 w-auto lg:block"
+                      className="hidden mt-1 h-28 w-auto lg:block"
                       src="/logos/light.png"
                       alt="Digital Dash"
                     />
@@ -45,7 +46,7 @@ export default function Navbar({ dark }) {
                     :
 
                     <img
-                      className="hidden mt-1 h-24 w-auto lg:block"
+                      className="hidden mt-1 h-28 w-auto lg:block"
                       src="/logos/dark.png"
                       alt="Digital Dash"
                     />

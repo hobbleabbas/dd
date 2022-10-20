@@ -154,7 +154,7 @@ export default function Work() {
 
             <div className="my-16" />
 
-            <Footer dark={true}/>
+            <Footer dark={false}/>
         </div>
     )
 }

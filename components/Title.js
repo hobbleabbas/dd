@@ -10,7 +10,7 @@ export function PageTitle({ text, dark }) {
     return <p className={classNames(dark ? 'text-white' : 'text-slate-800',"capitalize text-5xl font-medium")}>{ text }</p>
 }
 
-export function SubTitle({ text, dark , bold}) {
+export function SubTitle({ text, dark , bold }) {
     return <p className={classNames(dark && bold ? "text-white font-bold" : dark && !bold ? "text-white" : !dark && bold ? "text-slate-800, font-bold" : "text-slate-800", "uppercase font-medium text-md")}>{ text }</p>
 }
 

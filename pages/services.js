@@ -33,6 +33,7 @@ export default function Work() {
                          <p>Social Media Management</p>
                          <p>Advertising</p>
                          <p>Photography</p>
+                         <p>Web Development</p>
                      </div>
                  </div>
              </div>

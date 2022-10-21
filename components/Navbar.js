@@ -27,7 +27,7 @@ export default function Navbar({ dark }) {
     <Disclosure as="nav" className={classNames(dark ? "" : "text-black", "m-8 col-span-full relative")}>
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-2 lg:px-4">
             <div className="flex h-16 justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   <img
@@ -37,16 +37,16 @@ export default function Navbar({ dark }) {
                   />
                   {dark ? 
 
-                    <img
-                      className="hidden mt-1 h-28 w-auto lg:block"
-                      src="/logos/light.png"
-                      alt="Digital Dash"
-                    />
+                      <img
+                        className="hidden mt-1 h-20 w-auto lg:block"
+                        src="/logos/light.png"
+                        alt="Digital Dash"
+                      />
 
                     :
 
                     <img
-                      className="hidden mt-1 h-28 w-auto lg:block"
+                      className="hidden mt-1 h-20 w-auto lg:block"
                       src="/logos/dark.png"
                       alt="Digital Dash"
                     />
@@ -77,7 +77,7 @@ export default function Navbar({ dark }) {
                             href={item.href}
                             className={classNames(
                                 (item.current && dark) ? 'text-white underline underline-offset-8' : (!item.current && dark) ? 'text-gray-200 hover:underline underline-offset-8 transition delay-100 hover:text-white' : (item.current && !dark) ? "underline underline-offset-8" : (!item.current && !dark) ? "hover:underline underline-offset-8 delay-50 hover:text-gray-500" : "",
-                                'px-3 py-2 rounded-md text-sm font-medium uppercase'
+                                'px-3 py-2 rounded-md text-xs font-extralight uppercase'
                             )}
                             aria-current={item.current ? 'page' : undefined}
                             >

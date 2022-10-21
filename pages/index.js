@@ -24,10 +24,11 @@ export default function Home() {
         <div className="w-screen h-screen grid grid-cols-5">
           <Navbar dark={true} />
           <div className="-mt-96 col-span-2 text-center items-center flex p-8">
-            <div className="">
+            <div className="-mt-36 sm:ml-8 lg:ml-16">
               <SubTitle text={"Arézo"} dark={true} />
               <div className="m-4" />
-              <PageTitle text={"Amplifying the desire to feel great"} dark={true} />
+              <PageTitle text={"Amplifying the desire"} dark={true} />
+              <PageTitle text={"To Feel Great"} dark={true} />
               <div className="m-4" />
               <DDLink text={"See Case Study"} href = "#" dark={true} defaultUnderlined={true} />
             </div>
@@ -38,9 +39,9 @@ export default function Home() {
       {/** Learn about us section */}
       <div className="p-24">
         <div>
-          <div className="text-center px-36 py-16">
-            <PageTitle text = "digital dash is an independant Toronto-based strategy, design & communications company." />
-            <div className="m-12" />
+          <div className="text-center px-36 py-48 flex flex-col justify-center items-center">
+            <img src="/hometextintro.png" className="flex w-3/4 h-auto" />
+            <div className="m-8" />
             <DDLink text={"Learn about us"} href="/about" defaultUnderlined={true} />
           </div>
         </div>

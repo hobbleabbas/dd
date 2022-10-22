@@ -2,6 +2,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import { DDLink } from "../components/Link";
 import Navbar from "../components/Navbar";
+import NextPage from "../components/Nextpage";
 import { SubTitle } from "../components/Title";
 
 const aboutParagraphs = [
@@ -203,6 +204,8 @@ export default function Work() {
             </div>
 
             <div className="my-16" />
+
+            <NextPage dark={true} text="Contact" href={"/contact"} />
 
             <Footer dark={true}/>
         </div>

@@ -20,14 +20,13 @@ export default function Navbar({ dark }) {
     { name: 'About', href: '/about', current: path == "/about" },
     { name: 'Humans', href: '/humans', current: path == "/humans" },
     { name: 'Contact', href: '/contact', current: path == "/contact" },
-    { name: 'News', href: '/news', current: path == "/news" },
   ]
 
   return (
-    <Disclosure as="nav" className={classNames(dark ? "" : "text-black", "m-8 col-span-full relative")}>
+    <Disclosure as="nav" className={classNames(dark ? "" : "text-black", "p-8 col-span-full relative")}>
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-2 lg:px-4">
+          <div className="mx-auto max-w-7xl ">
             <div className="flex h-16 justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   <img
@@ -38,7 +37,7 @@ export default function Navbar({ dark }) {
                   {dark ? 
 
                       <img
-                        className="hidden mt-1 h-20 w-auto lg:block"
+                        className="hidden mt-1 h-24 w-auto lg:block"
                         src="/logos/light.png"
                         alt="Digital Dash"
                       />
@@ -46,7 +45,7 @@ export default function Navbar({ dark }) {
                     :
 
                     <img
-                      className="hidden mt-1 h-20 w-auto lg:block"
+                      className="hidden mt-1 h-24 w-auto lg:block"
                       src="/logos/dark.png"
                       alt="Digital Dash"
                     />

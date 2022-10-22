@@ -1,20 +1,18 @@
-import Image from "next/image";
 import Footer from "../components/Footer";
-import { DDLink } from "../components/Link";
 import Navbar from "../components/Navbar";
-import { SubTitle } from "../components/Title";
+import NextPage from "../components/Nextpage";
 
-export default function Work() {
+export default function Services() {
     return (
         <div className="h-full">
             <Navbar />
             <div className="py-48 flex flex-col items-center w-full justify-center align-center">
-                <p className="text-xl text-slate-800 uppercase font-semibold mb-8">Our Services</p>
+                <p className="font-montserrat text-xl text-slate-800 uppercase font-semibold mb-8">Our Services</p>
                 <img src={"/surface.png"} className="w-3/4 h-auto" />
             </div>
             <div className="grid grid-cols-2 p-16">
                  <div className="px-24">
-                    <p className="text-sm font-regular text-slate-700 uppercase">Services</p>
+                    <p className="font-montserrat tracking-widest text-sm font-medium text-slate-700 uppercase">Services</p>
                  </div>
                  <div className="grid grid-cols-2 gap-8 font-medium">
                      <div>
@@ -40,6 +38,13 @@ export default function Work() {
 
 
             <div className="my-16" />
+
+            <div className="font-montserrat">
+                <NextPage 
+                    text="Minds @ Work"
+                    href="/humans"
+                />
+            </div>
 
             <Footer dark={false}/>
         </div>

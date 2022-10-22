@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import NextPage from "../components/Nextpage";
 import { SubTitle } from "../components/Title";
 
 const aboutParagraphs = [
@@ -10,14 +11,24 @@ const aboutParagraphs = [
             "minute details and the",
             "big picture."
         ],
-        "text": "We love to look beyond the surface of things — While we understand that it’s impossible to completely silence our minds (designers do be crazy), we believe it’s far more important to be present. That’s why we put all our ideas to the test and take pride in our iterative processes."
+        "text": [
+            "We love to look beyond the surface of things — While we", 
+            "understand that it’s impossible to completely silence our",
+            "minds (designers do be crazy), we believe it’s far more",
+            "important to be present. That’s why we put all our ideas to",
+            "the test and take pride in our iterative processes."
+        ]
     },
     {
         "title": [
             "Focusing on",
             "Ideas & Purpose."
         ],
-        "text": "It all begins with you. We love hearing your stories and why you do what you do. Let us take you out for a coffee, ideas flow better with caffeine in our system."
+        "text": [
+            "It all begins with you. We love hearing your stories and",
+            "why you do what you do. Let us take you out for a coffee,",
+            "ideas flow better with caffeine in our system."
+        ]
     },
     {
         "title": [
@@ -25,7 +36,11 @@ const aboutParagraphs = [
             "of individual &",
             "collective identity."
         ],
-        "text": "Unified vision, individual ideas, combined artistry. We have got some great minds at work that come together to breathe life into your visions."
+        "text": [
+            "Unified vision, individual ideas, combined artistry. We have",
+            "got some great minds at work that come together to",
+            "breathe life into your visions."
+        ]
     },
 ]
 export default function About() {
@@ -49,7 +64,9 @@ export default function About() {
                                         ))}
                                     </div>
                                     <div className="mt-4" />
-                                    <p className="typography text-white font-light text-md max-w-3/4">{paragraph.text}</p>
+                                    <p className="typography text-white font-light text-md max-w-3/4 text-lg">{paragraph.text.map((text, index)=>(
+                                        <p className="leading-8" key={index}>{text}</p>
+                                    ))}</p>
                                 </div>
                             </div>
                             <div className="">
@@ -60,6 +77,12 @@ export default function About() {
             </div>
 
             <div className="my-16" />
+
+            <NextPage
+                text={"Our Services"}
+                href={"/services"}
+                dark={true}
+            />
 
             <Footer dark={true}/>
         </div>

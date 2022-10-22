@@ -12,6 +12,7 @@ const aboutParagraphs = [
             "Feel Great"
         ],
         "link": "/case-study/arezo",
+        "image": "/work/arezo.png"
     },
     {
         "company": "SHēK",
@@ -20,6 +21,7 @@ const aboutParagraphs = [
             "to Women’s Fashion"
         ],
         "link": "/case-study/shek",
+        "image": "/work/shek.png"
     },
     {
         "company": "Möbel",
@@ -28,6 +30,7 @@ const aboutParagraphs = [
             "Better Place",
         ],
         "link": "/case-study/mobel",
+        "image": "/work/mobel.png"
     },
     {
         "company": "DEWJI REALTY",
@@ -36,6 +39,7 @@ const aboutParagraphs = [
             "Representing Individuality."
         ],
         "link": "/case-study/dewji",
+        "image": "/work/dewji.png"
     },
     {
         "company": "MAISON DE FLEURS",
@@ -44,6 +48,7 @@ const aboutParagraphs = [
             "A Floral Shop On A Mission",
         ],
         "link": "/case-study/maison-de-fleurs",
+        "image": "/work/maison.png"
     },
     {
         "company": "Olive Tree Jewelry",
@@ -53,6 +58,7 @@ const aboutParagraphs = [
             "You Are From"
         ],
         "link": "/case-study/olive-tree-jewelry",
+        "image": "/work/olive.png"
     },
     {
         "company": "Remé",
@@ -61,6 +67,7 @@ const aboutParagraphs = [
             "Comfort"
         ],
         "link": "/case-study/reme",
+        "image": "/work/reme.png"
     },
     {
         "company": "Xana International",
@@ -70,6 +77,7 @@ const aboutParagraphs = [
             "Greatest Renovated Spaces"
         ],
         "link": "/case-study/xana-international",
+        "image": "/work/xana.png"
     },
     {
         "company": "Friday Grooming Co.",
@@ -79,6 +87,7 @@ const aboutParagraphs = [
             "& Produced in Toronto"
         ],
         "link": "/case-study/friday-grooming-co",
+        "image": "/work/friday.png"
     },
     {
         "company": "SEQ Technology",
@@ -87,6 +96,7 @@ const aboutParagraphs = [
             "Blissful Moments"
         ],
         "link": "/case-study/seq-technology",
+        "image": "/work/"
     },
     {
         "company": "Bliss Beginnings",
@@ -97,6 +107,7 @@ const aboutParagraphs = [
             "Complex Technical Challenges"
         ],
         "link": "/case-study/bliss-beginnings",
+        "image": "/work/bliss.png"
     },
     {
         "company": "Feldstein Family Law",
@@ -105,6 +116,7 @@ const aboutParagraphs = [
             "Feel Great"
         ],
         "link": "/case-study/feldstein-family-law",
+        "image": "/work/feldstein.png"
     },
     {
         "company": "Prime Time Messenger",
@@ -113,6 +125,7 @@ const aboutParagraphs = [
             "Into An Innovative Brand"
         ],
         "link": "/case-study/prime-time-messenger",
+        "image": "/work/"
     }
 ]
 export default function Work() {
@@ -120,20 +133,21 @@ export default function Work() {
         <div className="h-full bg-black text-white">
             <Navbar dark={true} />
             <div className="py-48 flex flex-col items-center w-full justify-center align-center">
-                <p className="text-xl text-slate-800 uppercase font-semibold mb-8">Our Work</p>
-                <img src={"/work.png"} className="w-3/4 h-auto" />
+                <img src={"/featuredwork.png"} className="w-3/4 h-auto" />
+                <img src={"/featuredsubtitle.png"} className="mt-16 w-1/2 h-auto" />
             </div>
             <div className="px-16 tracking-tight w-full">
-                <div className="grid grid-cols-1 gap-y-32 p-16">
+                <div className="grid grid-cols-1 gap-y-16">
                 {aboutParagraphs.map((paragraph, index) => {
                     if (index % 2 == 0) {
                         return (
-                            <div key={index} className="grid grid-cols-6 w-full">
-                                <div className="col-span-5 flex flex-col justify-center ">
-                                    <p className="tracking-wider text-md font-light">{index + 1}/{aboutParagraphs.length}</p>
+                            <div key={index} className="grid grid-cols-5 w-full">
+                                <div className="col-span-3 flex flex-col justify-center">
+                                    <p className="tracking-wider text-sm font-light">{index + 1}/{aboutParagraphs.length}</p>
                                     <div className="flex justify-center content-center align-center text-center flex-col items-center">
+                                        <img src={paragraph.image} className="w-full h-auto my-6" />
+                                        
                                         <div>
-                                            <img src="/logos/light.png" className="w-32 h-auto" />
                                             <p className="text-md">{paragraph.company}</p>
                                             <div className="mt-4" />
                                                 {paragraph.title.map((title, index) => (
@@ -150,20 +164,20 @@ export default function Work() {
                                         <div className="mt-4" />
                                     </div>
                                 </div>
-                                <div>
+                                <div className="col-span-2">
                                 </div>
                             </div>
                         )
                     } else {
                         return (
-                            <div key={index} className="grid grid-cols-6">
-                                <div>
+                            <div key={index} className="grid grid-cols-2">
+                                <div className="col-span-1">
                                 </div>
-                                <div className="col-span-5 flex flex-col justify-center ">
+                                <div className="col-span-1 flex flex-col justify-center">
                                     <p className="tracking-wider text-md font-light">{index + 1}/{aboutParagraphs.length}</p>
                                     <div className="flex justify-center content-center align-center text-center flex-col items-center">
+                                        <img src={paragraph.image} className="w-full h-auto my-6" />
                                         <div>
-                                            <img src="/logos/light.png" className="w-32 h-auto" />
                                             <p className="text-md">{paragraph.company}</p>
                                             <div className="mt-4" />
                                                 {paragraph.title.map((title, index) => (
@@ -180,6 +194,7 @@ export default function Work() {
                                         <div className="mt-4" />
                                     </div>
                                 </div>
+                                
                             </div>
                         )
                     }
@@ -189,7 +204,7 @@ export default function Work() {
 
             <div className="my-16" />
 
-            <Footer dark={false}/>
+            <Footer dark={true}/>
         </div>
     )
 }

@@ -1,8 +1,13 @@
+import Image from "next/image";
 import Footer from "../components/Footer";
 import { DDLink } from "../components/Link";
 import Navbar from "../components/Navbar";
 import { SubTitle } from "../components/Title";
 import humanssplash from "../public/humanssplash.png"
+import { Fragment, useState } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import { CheckIcon, XMarkIcon } from '@heroicons/react/24/outline'
+
 
 const people = [
     { 
@@ -64,12 +69,12 @@ export default function Humans() {
         <div>
             <Navbar dark={false} />
             <div className="pt-36 pb-24 flex flex-col items-center w-full justify-center align-center">
-                <SubTitle text={"Minds @ Work"} bold={true} />
-                <img src={"/resilient.png"} className="w-2/3 h-auto mt-8" />
+                <img src={"/mindsatwork.png"} className="w-4/5 h-auto" />
+                <img src={"/resilient.png"} className="w-3/4 h-auto mt-8" />
             </div>
-            <div className="grid md:grid-cols-2 gap-4 p-16">
+            <div className="grid md:grid-cols-3 md:gap-4 p-16">
                 {people.map((person, index)=>(
-                    <div key={index} className="px-4 sm:px-16 md:px-32 lg:px-36 py-8">
+                    <div key={index} className="px-4 sm:px-8 py-8">
                         <PersonCard
                             key={index}
                             name = {person.name}
@@ -81,6 +86,14 @@ export default function Humans() {
                 ))}
             </div>
 
+            <div>
+                {/* <Image
+                    src={'/humanssplash.png'}
+                    layout='fill'
+                /> */}
+            </div>
+            
+
             <Footer dark={false}/>
         </div>
     )
@@ -88,21 +101,90 @@ export default function Humans() {
 
 export function PersonCard({ name, title, picture, paragraphs }) {
 
+    const [open, setOpen] = useState(false)
 
     return (
         <div>
-            <img
-                src={picture}
-                width="full"
-                height="auto"
-            />
-            <p className="font-serif mt-8 font-semibold text-lg">{ name }</p>
-            <p className="mt-1 mb-4 font-extralight text-sm">{ title }</p>
-            <span className="text-xs font-light text-slate-700">
-                {JSON.parse(paragraphs).map((paragraph, index) => (
-                    <p className="mb-4" key = {index}>{ paragraph }</p>
-                ))}
-            </span>
+            <div className="w-full">
+                <img
+                    src={picture}
+                    className="w-full object-contain"
+                />
+            </div>
+            <p className="mt-8 font-semibold text-lg">{ name }</p>
+            <p className="mt-1 mb-4 font-regular text-md tracking-wide">{ title }</p>
+            <a onClick={()=>{setOpen(true)}} className='cursor-pointer text-slate-600 underline uppercase font-medium hover:opacity-50 underline-offset-8 hover:transition delay-50 text-xs'>
+                Read Bio
+            </a>
+            <Transition.Root show={open} as={Fragment}>
+                <Dialog as="div" className="relative z-10" onClose={setOpen}>
+                    <Transition.Child
+                    as={Fragment}
+                    enter="ease-out duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="ease-in duration-200"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                    >
+                    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 z-10 overflow-y-auto">
+                    <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                        <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        enterTo="opacity-100 translate-y-0 sm:scale-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                        leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        >
+                        <Dialog.Panel className="relative transform overflow-hidden bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-4xl">
+                            <div className="flex">
+                                <div>
+                                    <img
+                                        src={picture}
+                                        className="min-h-full w-auto"
+                                    />
+                                </div>
+                                <div className="px-4 pt-5 pb-4 sm:p-6">
+                                    <div className="flex justify-between items-center align-center mb-3">
+                                        <h3 className="text-lg font-semibold tracking-wide">About { name }</h3>
+                                        <a className="p-2 cursor-pointer hover:bg-gray-50" onClick={()=>{setOpen(false)}}>
+                                            <XMarkIcon className="h-6 w-6" />
+                                        </a>
+                                    </div>
+                                    <span className="text-sm font-light text-slate-700">
+                                        {JSON.parse(paragraphs).map((paragraph, index) => (
+                                            <p className="mb-4" key = {index}>{ paragraph }</p>
+                                        ))}
+                                    </span>
+                                </div>
+                            </div>
+                        </Dialog.Panel>
+                        </Transition.Child>
+                    </div>
+                    </div>
+                </Dialog>
+                </Transition.Root>
         </div>
     )
 }
+// export function PersonCard({ name, title, picture, paragraphs }) {
+
+
+//     return (
+//         <div>
+//             <img
+//                 src={picture}
+//                 width="full"
+//                 height="auto"
+//             />
+//             <p className="font-serif mt-8 font-semibold text-lg">{ name }</p>
+//             <p className="mt-1 mb-4 font-extralight text-sm">{ title }</p>
+            // 
+//         </div>
+//     )
+// }

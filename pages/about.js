@@ -65,7 +65,7 @@ export default function About() {
                                     </div>
                                     <div className="mt-4" />
                                     <p className="typography text-white font-light text-md max-w-3/4 text-lg">{paragraph.text.map((text, index)=>(
-                                        <p className="leading-8" key={index}>{text}</p>
+                                        <span className="leading-8" key={index}>{text}</span>
                                     ))}</p>
                                 </div>
                             </div>

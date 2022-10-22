@@ -117,38 +117,73 @@ const aboutParagraphs = [
 ]
 export default function Work() {
     return (
-        <div className="h-full">
-            <Navbar />
+        <div className="h-full bg-black text-white">
+            <Navbar dark={true} />
             <div className="py-48 flex flex-col items-center w-full justify-center align-center">
                 <p className="text-xl text-slate-800 uppercase font-semibold mb-8">Our Work</p>
                 <img src={"/work.png"} className="w-3/4 h-auto" />
             </div>
-            <div className="px-16">
-                <div className="grid grid-cols-2 gap-y-32 p-16">
-                {
-                    aboutParagraphs.map((paragraph, index) => (
-                        <div key={index} className="grid grid-cols-8 gap-0 justify-left">
-                            <p className="text-gray-500 text-md text-lg font-semibold col-span-1">{index + 1}</p>
-                            <div className="flex justify-start flex-col col-span-7">
-                                <div>
-                                    <p className="text-md">{paragraph.company}</p>
-                                    <div className="mt-4" />
-                                    {paragraph.title.map((title, index) => (
-                                        <h2 key={index} className="text-4xl font-semibold max-w-1/2 text-slate-800">{title}</h2>
-                                    ))}
-                                    <div className="mt-8" />
-                                    <DDLink 
-                                        text="See Case Study"
-                                        defaultUnderlined={true}
-                                        href={paragraph.link}
-                                        dark={false}
-                                    />
+            <div className="px-16 tracking-tight w-full">
+                <div className="grid grid-cols-1 gap-y-32 p-16">
+                {aboutParagraphs.map((paragraph, index) => {
+                    if (index % 2 == 0) {
+                        return (
+                            <div key={index} className="grid grid-cols-6 w-full">
+                                <div className="col-span-5 flex flex-col justify-center ">
+                                    <p className="tracking-wider text-md font-light">{index + 1}/{aboutParagraphs.length}</p>
+                                    <div className="flex justify-center content-center align-center text-center flex-col items-center">
+                                        <div>
+                                            <img src="/logos/light.png" className="w-32 h-auto" />
+                                            <p className="text-md">{paragraph.company}</p>
+                                            <div className="mt-4" />
+                                                {paragraph.title.map((title, index) => (
+                                                    <h2 key={index} className="text-4xl font-semibold max-w-1/2 text-white">{title}</h2>
+                                                ))}
+                                            <div className="mt-8" />
+                                            <DDLink 
+                                                text="See Case Study"
+                                                defaultUnderlined={true}
+                                                href={paragraph.link}
+                                                dark={true}
+                                            />
+                                        </div>
+                                        <div className="mt-4" />
+                                    </div>
                                 </div>
-                                <div className="mt-4" />
+                                <div>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        )
+                    } else {
+                        return (
+                            <div key={index} className="grid grid-cols-6">
+                                <div>
+                                </div>
+                                <div className="col-span-5 flex flex-col justify-center ">
+                                    <p className="tracking-wider text-md font-light">{index + 1}/{aboutParagraphs.length}</p>
+                                    <div className="flex justify-center content-center align-center text-center flex-col items-center">
+                                        <div>
+                                            <img src="/logos/light.png" className="w-32 h-auto" />
+                                            <p className="text-md">{paragraph.company}</p>
+                                            <div className="mt-4" />
+                                                {paragraph.title.map((title, index) => (
+                                                    <h2 key={index} className="text-4xl font-semibold max-w-1/2 text-white">{title}</h2>
+                                                ))}
+                                            <div className="mt-8" />
+                                            <DDLink 
+                                                text="See Case Study"
+                                                defaultUnderlined={true}
+                                                href={paragraph.link}
+                                                dark={true}
+                                            />
+                                        </div>
+                                        <div className="mt-4" />
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    }
+                })}
                 </div>
             </div>
 

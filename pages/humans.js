@@ -56,7 +56,7 @@ const people = [
     },
     { 
         name: "Sal Merchant",
-        title: "Chief Technology Officer | Web & Digital Lead",
+        title: "Chief Technology Officer",
         image: "/salmerchant.png",
         paragraphs: [
             "Sal is a Full Stack Developer with 11+ years of experience working for both large and small firms. He has extensive experience in digital marketing, including SEO and SMO campaigns, as well as website and custom CMS development.",
@@ -86,11 +86,18 @@ export default function Humans() {
                 ))}
             </div>
 
-            <div>
-                {/* <Image
-                    src={'/humanssplash.png'}
-                    layout='fill'
-                /> */}
+            <div className="text-center flex flex-col justify-center items-center">
+                <img src="/humanssplash.png" className="flex w-full h-auto" />
+            </div>
+
+            <div className="text-center px-16 pt-48 flex flex-col justify-center items-center">
+                <img src="/humans/compendium.png" className="flex w-4/5 h-auto" />
+                <div className="m-8" />
+                <DDLink text={"Featured Work"} href="/work" defaultUnderlined={true} />
+            </div>
+
+            <div className="text-center px-16 py-24 flex flex-col justify-center items-center">
+                <img src="/humans/surface.png" className="flex w-4/5 h-auto" />
             </div>
             
 

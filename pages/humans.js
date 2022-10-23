@@ -103,13 +103,19 @@ export function PersonCard({ name, title, picture, paragraphs }) {
 
     const [open, setOpen] = useState(false)
 
+    const style= {
+        backgroundImage: `url(${picture})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+    }
+
     return (
         <div>
-            <div className="w-full">
-                <img
+            <div className="w-full h-72" style={style}>
+                {/* <img
                     src={picture}
-                    className="w-full object-contain"
-                />
+                    className="w-full h-full"
+                /> */}
             </div>
             <p className="mt-8 font-semibold text-lg">{ name }</p>
             <p className="mt-1 mb-4 font-regular text-md tracking-wide">{ title }</p>
@@ -142,14 +148,11 @@ export function PersonCard({ name, title, picture, paragraphs }) {
                         leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                         >
                         <Dialog.Panel className="relative transform overflow-hidden bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-4xl">
-                            <div className="flex">
-                                <div>
-                                    <img
-                                        src={picture}
-                                        className="min-h-full w-auto"
-                                    />
+                            <div className="flex grid grid-cols-3">
+                                <div className="col-span-1" style={style}>
+                                    
                                 </div>
-                                <div className="px-4 pt-5 pb-4 sm:p-6">
+                                <div className="px-4 pt-5 pb-4 sm:p-6 col-span-2">
                                     <div className="flex justify-between items-center align-center mb-3">
                                         <h3 className="text-lg font-semibold tracking-wide">About { name }</h3>
                                         <a className="p-2 cursor-pointer hover:bg-gray-50" onClick={()=>{setOpen(false)}}>

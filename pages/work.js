@@ -68,7 +68,7 @@ const aboutParagraphs = [
             "Comfort"
         ],
         "link": "/case-study/reme",
-        "image": "/work/reme.png"
+        "image": "/work/xana.png"
     },
     {
         "company": "Xana International",
@@ -78,7 +78,7 @@ const aboutParagraphs = [
             "Greatest Renovated Spaces"
         ],
         "link": "/case-study/xana-international",
-        "image": "/work/xana.png"
+        "image": "/work/reme.png"
     },
     {
         "company": "Friday Grooming Co.",
@@ -97,7 +97,7 @@ const aboutParagraphs = [
             "Blissful Moments"
         ],
         "link": "/case-study/seq-technology",
-        "image": "/work/"
+        "image": "/work/seq.png"
     },
     {
         "company": "Bliss Beginnings",
@@ -126,7 +126,7 @@ const aboutParagraphs = [
             "Into An Innovative Brand"
         ],
         "link": "/case-study/prime-time-messenger",
-        "image": "/work/"
+        "image": "/work/prime.jpg"
     }
 ]
 export default function Work() {

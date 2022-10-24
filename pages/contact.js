@@ -31,6 +31,8 @@ export default function Contact() {
                 </div>
             </div>
 
+            <div className="my-24" />
+
             <Footer dark={true}/>
         </div>
     )

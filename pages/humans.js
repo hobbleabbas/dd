@@ -35,7 +35,8 @@ const people = [
         title: "Director of Client Services",
         image: "/maryamshah.png",
         paragraphs: [
-            "Raised in Montreal, Maryam worked in the Fashion Industry as a fashion stylist and has extensive experience in project management. Maryam is responsible for leading the planning team at Digital Dash. Maryam holds a degree in Fashion from The Metropolitan University (formerly known as Ryerson University)",
+            "Raised in Montreal, Maryam worked in the Fashion Industry as a fashion stylist and has extensive experience in project management. Maryam is responsible for leading the planning team at Digital Dash.",
+            "Maryam holds a degree in Fashion from The Metropolitan University (formerly known as Ryerson University)"
         ]
     },
     { 
@@ -118,7 +119,7 @@ export function PersonCard({ name, title, picture, paragraphs }) {
 
     return (
         <div>
-            <div className="w-full h-72" style={style}>
+            <div className="w-full h-96" style={style}>
                 {/* <img
                     src={picture}
                     className="w-full h-full"
@@ -157,7 +158,6 @@ export function PersonCard({ name, title, picture, paragraphs }) {
                         <Dialog.Panel className="relative transform overflow-hidden bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-4xl">
                             <div className="flex grid grid-cols-3">
                                 <div className="col-span-1" style={style}>
-                                    
                                 </div>
                                 <div className="px-4 pt-5 pb-4 sm:p-6 col-span-2">
                                     <div className="flex justify-between items-center align-center mb-3">

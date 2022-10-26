@@ -135,7 +135,7 @@ export default function Work() {
             <Navbar dark={true} />
             <div className="py-48 flex flex-col items-center w-full justify-center align-center">
                 <img src={"/featuredwork.png"} className="w-3/4 h-auto" />
-                <img src={"/featuredsubtitle.png"} className="mt-16 w-1/2 h-auto" />
+                <img src={"/featuredsubtitle.png"} className="mt-16 w-3/4 sm:w-1/2 h-auto" />
             </div>
             <div className="px-16 tracking-tight w-full">
                 <div className="grid grid-cols-1 gap-y-16">

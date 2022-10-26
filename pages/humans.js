@@ -115,6 +115,7 @@ export function PersonCard({ name, title, picture, paragraphs }) {
         backgroundImage: `url(${picture})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        backgroundPosition: "center"
     }
 
     return (

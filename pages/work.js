@@ -142,7 +142,7 @@ export default function Work() {
                 {aboutParagraphs.map((paragraph, index) => {
                     if (index % 2 == 0) {
                         return (
-                            <div key={index} className="grid grid-cols-5 w-full">
+                            <div key={index} className="grid sm:grid-cols-5 w-full">
                                 <div className="col-span-3 flex flex-col justify-center">
                                     <p className="tracking-wider text-sm font-light">{index + 1}/{aboutParagraphs.length}</p>
                                     <div className="flex justify-center content-center align-center text-center flex-col items-center">
@@ -171,7 +171,7 @@ export default function Work() {
                         )
                     } else {
                         return (
-                            <div key={index} className="grid grid-cols-2">
+                            <div key={index} className="grid sm:grid-cols-2">
                                 <div className="col-span-1">
                                 </div>
                                 <div className="col-span-1 flex flex-col justify-center">

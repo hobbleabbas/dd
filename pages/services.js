@@ -10,8 +10,8 @@ export default function Services() {
                 <p className="font-montserrat text-xl text-slate-800 uppercase font-semibold mb-8">Our Services</p>
                 <img src={"/surface.png"} className="w-3/4 h-auto" />
             </div>
-            <div className="grid grid-cols-2 p-16">
-                 <div className="px-24">
+            <div className="grid sm:grid-cols-2 p-16">
+                 <div className="sm:px-24 mb-8 sm:mb-0">
                     <p className="font-montserrat tracking-widest text-sm font-medium text-slate-700 uppercase">Services</p>
                  </div>
                  <div className="grid grid-cols-2 gap-8 font-medium">

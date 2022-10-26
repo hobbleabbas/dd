@@ -156,6 +156,7 @@ export default function Home() {
           backgroundImage: `url(${Indexsplash3.src})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "center"
         }}>
         <div className="h-screen w-full">
         </div>

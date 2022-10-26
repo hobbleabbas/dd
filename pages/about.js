@@ -54,7 +54,7 @@ export default function About() {
             <div className="px-16">
                 {
                     aboutParagraphs.map((paragraph, index) => (
-                        <div key={index} className="grid grid-cols-2 p-16">
+                        <div key={index} className="grid grid-cols-1 sm:grid-cols-2 p-16">
                             <div className="grid grid-cols-8 gap-0 justify-left">
                                 <p className="text-gray-500 text-md text-extralight font-light col-span-1">{index + 1}</p>
                                 <div className="flex justify-start flex-col col-span-7">

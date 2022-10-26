@@ -23,29 +23,30 @@ export default function Home() {
       <div className="bg-fixed" style={style}>
         <div className="w-screen h-screen grid grid-cols-5">
           <Navbar dark={true} />
-          <div className="-mt-96 col-span-2 text-center items-center flex p-8">
-            <div className="-mt-36 sm:ml-8 lg:ml-16">
+          <div className="-mt-96 col-span-full sm:col-span-2 text-center items-center flex p-8">
+            <div className="-mt-36 ml-0 sm:ml-8 lg:ml-16 w-full">
               <SubTitle text={"Arézo"} dark={true} />
-              <div className="m-4" />
+              <div className="m-12 sm:m-4" />
               <PageTitle text={"Amplifying the desire"} dark={true} />
               <PageTitle text={"To Feel Great"} dark={true} />
               <div className="m-4" />
-              <DDLink text={"See Case Study"} href = "#" dark={true} defaultUnderlined={true} />
+              <div className="mt-12 sm:mt-0" />
+              <DDLink text={"See Case Study"} href = "/bru" dark={true} defaultUnderlined={true} />
             </div>
           </div>
         </div>
       </div>
 
       {/** Learn about us section */}
-      <div className="p-24">
+      <div className="p-8 sm:p-24">
         <div>
-          <div className="text-center px-36 py-48 flex flex-col justify-center items-center">
-            <img src="/hometextintro.png" className="flex w-3/4 h-auto" />
+          <div className="text-center sm:px-36 py-48 flex flex-col justify-center items-center">
+            <img src="/hometextintro.png" className="flex w-fulls sm:w-3/4 h-auto" />
             <div className="m-8" />
             <DDLink text={"Learn about us"} href="/about" defaultUnderlined={true} />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <Card 
             title = "Amplifying The Desire To Feel Great"
             sub_title = "Maison De Fleurs"

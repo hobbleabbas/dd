@@ -13,13 +13,13 @@ export default function Contact() {
                 <p className="uppercase font-extralight text-md tracking-widest">Contact</p>
             </div>
 
-            <div className="text-center px-72 flex flex-col justify-center items-center">
+            <div className="text-center px-12 sm:px-24 md:px-36 lg:px-72 flex flex-col justify-center items-center">
                 <img src="/contact.png" className="flex w-full h-auto" />
             </div>
 
             <div className="my-16" />
 
-            <div className="grid grid-cols-4 px-16 gap-16 uppercase">
+            <div className="grid sm:grid-cols-4 px-16 gap-16 uppercase">
                 <div className="col-span-1">
                     <p className="text-xs font-extralight tracking-wider">General Inquiries</p>
                     <p className="text-md mt-2 font-bold tracking-wide"><Link href="mailto:info@digital-dash.ca"><a>info@digital-dash.ca</a></Link></p>

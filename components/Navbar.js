@@ -23,17 +23,32 @@ export default function Navbar({ dark }) {
   ]
 
   return (
-    <Disclosure as="nav" className={classNames(dark ? "" : "text-black", "p-8 col-span-full relative")}>
+    <Disclosure as="nav" className={classNames(dark ? "" : "text-black", "p-0 sm:p-8 col-span-full relative")}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl ">
             <div className="flex h-16 justify-between">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="/logos/dark.png"
+                  
+                  {/** Mobile logo */}
+                {dark ? 
+
+                    <img
+                    className="block h-20 w-auto lg:hidden m-8"
+                    src="/logos/light.png"
                     alt="Your Company"
-                  />
+                    />
+
+                  :
+
+                    <img
+                      className="block h-20 w-auto lg:hidden m-8"
+                      src="/logos/dark.png"
+                      alt="Your Company"
+                    />
+                  }
+
+
                   {dark ? 
 
                       <img
@@ -55,7 +70,7 @@ export default function Navbar({ dark }) {
                 <div className="flex">
                     <div className="-ml-2 mr-2 flex items-center md:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <Disclosure.Button className={classNames(dark ? "hover:text-white " : "hover:bg-slate-100 hover:text-slate-800 ", "m-4 inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white")}>
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                         <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -90,36 +105,53 @@ export default function Navbar({ dark }) {
             </div>
           </div>
 
-          <Disclosure.Panel className="md:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-            <div className="border-t border-gray-700 pt-4 pb-3">
-              <div className="flex items-center px-5 sm:px-6">
-                
-                <button
-                  type="button"
-                  className="ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                >
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
+          {
+            dark ?
+
+            <Disclosure.Panel className="md:hidden p-3 backdrop-blur-lg">
+              <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+                {navigation.map((item) => (
+                  <Link href = {item.href}>
+                    <Disclosure.Button
+                      key={item.name}
+                      as="a"
+                      href={item.href}
+                      className={classNames(
+                        item.current ? 'text-white font-extrabold tracking-wider' : 'text-gray-300 hover:text-white',
+                        'block px-3 py-2 rounded-md text-base font-medium'
+                      )}
+                      aria-current={item.current ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  </Link>
+                ))}
               </div>
-            </div>
-          </Disclosure.Panel>
+            </Disclosure.Panel>
+
+            :
+
+            <Disclosure.Panel className="md:hidden p-3 backdrop-blur-lg">
+              <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+                {navigation.map((item) => (
+                  <Link href = {item.href}>
+                    <Disclosure.Button
+                      key={item.name}
+                      as="a"
+                      href={item.href}
+                      className={classNames(
+                        item.current ? 'text-slate-800 font-extrabold tracking-wider' : 'text-slate-700 hover:bg-gray-50',
+                        'block px-3 py-2 rounded-md text-base font-medium'
+                      )}
+                      aria-current={item.current ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  </Link>
+                ))}
+              </div>
+            </Disclosure.Panel>
+          }
         </>
       )}
     </Disclosure>

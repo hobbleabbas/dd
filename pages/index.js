@@ -16,6 +16,7 @@ export default function Home() {
     backgroundImage: `url(${Homesplash.src})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+    backgroundPosition: "center"
   }
 
   return (
@@ -82,6 +83,7 @@ export default function Home() {
           backgroundImage: `url(${Indexsplash.src})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "center"
         }}>
         <div className="h-screen w-full">
         </div>
@@ -134,6 +136,7 @@ export default function Home() {
           backgroundImage: `url(${Indexsplash2.src})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "center"
         }}>
         <div className="h-screen w-full">
         </div>

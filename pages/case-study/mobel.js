@@ -43,7 +43,7 @@ export default function Arezo() {
             
             <div className="my-20 sm:my-24" />
 
-            <a target="_blank" href = "https://www.youtube.com/watch?v=pDsNaLfF-Ao">
+            <a target="_blank"rel="noreferrer" href = "https://www.youtube.com/watch?v=pDsNaLfF-Ao">
                 <div style={{
                     backgroundImage: `url(${firstImage.src})`,
                     backgroundSize: "cover",

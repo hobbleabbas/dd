@@ -7,7 +7,7 @@ import { MainTitle, PageTitle, SubTitle } from "../components/Title";
 import Indexsplash from "../public/indexsplash.png"
 import Indexsplash2 from "../public/indexsplash2.png"
 import Indexsplash3 from "../public/indexsplash3.png"
-
+import Beyond from "../public/beyond.png"
 
 export default function Home() {
 
@@ -22,6 +22,13 @@ export default function Home() {
     zIndex: '-1'
   }
 
+  const secondVideoStyle = {
+    width: '100vw',
+    height: '100vh',
+    objectFit: 'cover',
+    zIndex: '-1'
+  }
+
   return (
     <div>
       <video
@@ -33,8 +40,8 @@ export default function Home() {
         <source src='/arezo.mp4' type='video/mp4' />
             Your browser does not support the video tag.
       </video>
-      <div className="bg-fixed" >
-        <div className="w-screen h-screen grid grid-cols-5">
+      <div className="bg-fixed">
+        <div className=" h-screen grid grid-cols-5">
           <Navbar dark={true} />
           <div className="-mt-96 col-span-full sm:col-span-2 text-center items-center flex p-8">
             <div className="-mt-36 ml-0 sm:ml-8 lg:ml-16 w-full">
@@ -53,53 +60,53 @@ export default function Home() {
       {/** Learn about us section */}
       <div className="p-8 ">
         <div>
-          <div className="text-center sm:px-16 md:px-24 lg:px-36 py-48 flex flex-col justify-center items-center">
+          <div className="text-center sm:px-16 md:px-24 lg:px-30 py-48 flex flex-col justify-center items-center">
             <img src="/hometextintro.png" className="flex w-fulls sm:w-3/4 h-auto" />
             <div className="m-8" />
             <DDLink text={"Learn about us"} href="/about" defaultUnderlined={true} />
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:p-8 md:p-16">
           <Card 
-            title = "Amplifying The Desire To Feel Great"
-            sub_title = "Maison De Fleurs"
+            title = {JSON.stringify(["Jewelry that Reflects", "Who You Are & Where", "You Are From"])}
+            sub_title = "Olive Tree Jewelry"
             link_text = "See case study"
-            link_href = "/case-study/maison-de-fleurs"
+            link_href = "/case-study/olive-tree-jewelry"
             image_src = "yourbrand.png"
           />
           <Card 
-            title = "Amplifying The Desire To Feel Great"
-            sub_title = "Maison De Fleurs"
+            title = {JSON.stringify(["A Lifestyle: Imagining A", "Better Place"])}
+            sub_title = "Möbel"
             link_text = "See case study"
-            link_href = "/case-study/maison-de-fleurs"
+            link_href = "/case-study/mobel"
             image_src = "mobel.png"
           />
           <Card 
-            title = "Amplifying The Desire To Feel Great"
-            sub_title = "Maison De Fleurs"
+            title = {JSON.stringify(["Personalized Brand", "Representing Individuality."])}
+            sub_title = "Dewji Realty"
             link_text = "See case study"
-            link_href = "/case-study/maison-de-fleurs"
+            link_href = "/case-study/dewji-realty"
             image_src = "eyes.png"
           />
           <Card 
-            title = "Amplifying The Desire To Feel Great"
-            sub_title = "Maison De Fleurs"
+            title = {JSON.stringify(["Essentials Giving", "Comfort"])}
+            sub_title = "Remé"
             link_text = "See case study"
-            link_href = "/case-study/maison-de-fleurs"
+            link_href = "/case-study/reme"
             image_src = "book.png"
           />
         </div>
       </div>
 
-      <div style={{
-          backgroundImage: `url(${Indexsplash.src})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center"
-        }}>
-        <div className="h-screen w-full">
-        </div>
-      </div>
+      <video
+          autoPlay
+          loop
+          muted
+          style={secondVideoStyle}
+      >
+        <source src='/outdoor.mp4' type='video/mp4' />
+            Your browser does not support the video tag.
+      </video>
 
       <div className="p-24">
         <div>
@@ -113,28 +120,28 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 gap-8">
           <Card 
-            title = "Amplifying The Desire To Feel Great"
+            title = {JSON.stringify(["FGC Introduces", "Premium Products Developed", "& Produced in Toronto"])}
             sub_title = "Friday Grooming Co."
             link_text = "See case study"
             link_href = "/case-study/friday-grooming"
             image_src = "fridaygrooming.png"
           />
           <Card 
-            title = "Amplifying The Desire To Feel Great"
+            title = {JSON.stringify(["Amplifying The Desire To Feel Great"])}
             sub_title = "Feldstein Family Law"
             link_text = "See case study"
             link_href = "/case-study/feldstein-family-law"
             image_src = "familylaw.png"
           />
           <Card 
-            title = "Amplifying The Desire To Feel Great"
+            title = {JSON.stringify(["Hospitality to Residential:", "A Look into Canada’s", "Greatest Renovated Spaces"])}
             sub_title = "Xana International"
             link_text = "See case study"
             link_href = "/case-study/xana-international"
             image_src = "xanaintl.png"
           />
           <Card 
-            title = "Amplifying The Desire To Feel Great"
+            title = {JSON.stringify(["Automation & Digital", "Transformations -", "Working Through Exceedingly", "Complex Technical Challenges"])}
             sub_title = "Bliss Beginnings"
             link_text = "See case study"
             link_href = "/case-study/bliss-beginnings"
@@ -181,7 +188,9 @@ export default function Home() {
       <div className="p-24">
         <div>
           <div className="text-center px-48 pb-16">
-            <PageTitle text = "We love to look beyond the surface of things" />
+            <div className="text-center px-12 sm:px-24 md:px-36 lg:px-72 flex flex-col justify-center items-center">
+                <img src={Beyond.src} className="flex w-full h-auto" />
+            </div>
             <div className="m-12" />
             <DDLink text={"Minds of DD"} href="/humans" defaultUnderlined={true} />
           </div>

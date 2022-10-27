@@ -111,7 +111,7 @@ export default function Navbar({ dark }) {
             <Disclosure.Panel className="md:hidden p-3 backdrop-blur-lg">
               <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                 {navigation.map((item) => (
-                  <Link href = {item.href}>
+                  <Link href = {item.href} key={item.href}>
                     <Disclosure.Button
                       key={item.name}
                       as="a"
@@ -134,7 +134,7 @@ export default function Navbar({ dark }) {
             <Disclosure.Panel className="md:hidden p-3 backdrop-blur-lg">
               <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                 {navigation.map((item) => (
-                  <Link href = {item.href}>
+                  <Link href = {item.href}  key={item.href}>
                     <Disclosure.Button
                       key={item.name}
                       as="a"

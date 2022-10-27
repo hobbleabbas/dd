@@ -22,12 +22,12 @@ export default function Arezo() {
                 <h1 className="flex items-center text-sm tracking-widest justify-center font-semibold">{name}</h1>
                 <div className="my-8 sm:my-12" />
                 {headers.map((header) => (
-                    <p className="text-6xl font-medium">{header}</p>
+                    <p key={header} className="text-6xl font-medium">{header}</p>
                 ))}
                 <div className="my-6 sm:my-8" />
                 <h4 className="mb-2 uppercase text-gray-400 tracking-widest font-regular text-lg">Services</h4>
                 {services.map((service)=>(
-                    <p className="text-lg">{service}</p>
+                    <p key={service} className="text-lg">{service}</p>
                 ))}
             </div>
             

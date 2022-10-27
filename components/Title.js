@@ -11,7 +11,7 @@ export function PageTitle({ text, dark }) {
 }
 
 export function SubTitle({ text, dark , bold }) {
-    return <p className={classNames(dark && bold ? "text-white font-bold" : dark && !bold ? "text-white" : !dark && bold ? "text-slate-800, font-bold" : "text-slate-800", "uppercase font-medium text-md")}>{ text }</p>
+    return <p className={classNames(dark && bold ? "text-white font-bold" : dark && !bold ? "text-white" : !dark && bold ? "text-slate-800, font-bold" : "text-slate-800", "uppercase font-medium text-md tracking-wider")}>{ text }</p>
 }
 
 export function LightSubTitle({ text, dark }) {

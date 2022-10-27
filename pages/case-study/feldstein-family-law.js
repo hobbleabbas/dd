@@ -5,16 +5,15 @@ import NextPage from "../../components/Nextpage";
 
 export default function Arezo() {
 
-    const name = "MAISON DE FLEURS"
+    const name = "Feldstein Family Law"
+
     const headers = [
-        "Blossoming Aesthetics",
-        "A Floral Shop On A Mission"
+        "Amplifying The Desire To",
+        "Feel Great"
     ]
 
     const services = [
-        "Brand Identity / Brand Voice",
-        "Messaging / Social Media",
-        "Marketing Collateral"
+        "Video / Social Media",
     ]
 
     return (
@@ -38,8 +37,8 @@ export default function Arezo() {
             <LoadingSpinner />
             
             <NextPage
-                text={"OLIVE TREE JEWELRY"}
-                href={"/case-study/olive-tree-jewelry"}
+                text={"PRIME TIME MESSENGER"}
+                href={"/case-study/prime-time-messenger"}
                 dark={false}
             />
                 

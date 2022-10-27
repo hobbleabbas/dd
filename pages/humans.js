@@ -73,7 +73,7 @@ export default function Humans() {
                 <img src={"/mindsatwork.png"} className="w-4/5 h-auto" />
                 <img src={"/resilient.png"} className="w-3/4 h-auto mt-8" />
             </div>
-            <div className="grid md:grid-cols-3 md:gap-4 p-16">
+            <div className="grid md:grid-cols-3 md:gap-4 p-4 sm:p-16">
                 {people.map((person, index)=>(
                     <div key={index} className="px-4 sm:px-8 py-8">
                         <PersonCard
@@ -121,10 +121,7 @@ export function PersonCard({ name, title, picture, paragraphs }) {
     return (
         <div>
             <div className="w-full h-96" style={style}>
-                {/* <img
-                    src={picture}
-                    className="w-full h-full"
-                /> */}
+
             </div>
             <p className="mt-8 font-semibold text-lg">{ name }</p>
             <p className="mt-1 mb-4 font-regular text-md tracking-wide">{ title }</p>
@@ -158,9 +155,9 @@ export function PersonCard({ name, title, picture, paragraphs }) {
                         >
                         <Dialog.Panel className="relative transform overflow-hidden bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-4xl">
                             <div className="flex grid grid-cols-3">
-                                <div className="col-span-1" style={style}>
+                                <div className="hidden sm:block col-span-1" style={style}>
                                 </div>
-                                <div className="px-4 pt-5 pb-4 sm:p-6 col-span-2">
+                                <div className="px-4 pt-5 pb-4 sm:p-6 col-span-full sm:col-span-2">
                                     <div className="flex justify-between items-center align-center mb-3">
                                         <h3 className="text-lg font-semibold tracking-wide">About { name }</h3>
                                         <a className="p-2 cursor-pointer hover:bg-gray-50" onClick={()=>{setOpen(false)}}>

@@ -1,4 +1,5 @@
 import Footer from "../../components/Footer";
+import LoadingSpinner from "../../components/LoadingSpinner";
 import Navbar from "../../components/Navbar";
 import NextPage from "../../components/Nextpage";
 
@@ -31,6 +32,10 @@ export default function Arezo() {
                     <p key={service} className="text-lg">{service}</p>
                 ))}
             </div>
+
+            <div className="my-20 sm:my-24" />
+
+            <LoadingSpinner />
             
             <NextPage
                 text={"MAISON DE FLEURS"}

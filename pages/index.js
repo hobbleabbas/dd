@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import { DDLink } from "../components/Link";
 import Navbar from "../components/Navbar";
 import { MainTitle, PageTitle, SubTitle } from "../components/Title";
-import Homesplash from "../public/homesplash.png"
 import Indexsplash from "../public/indexsplash.png"
 import Indexsplash2 from "../public/indexsplash2.png"
 import Indexsplash3 from "../public/indexsplash3.png"
@@ -12,16 +11,29 @@ import Indexsplash3 from "../public/indexsplash3.png"
 
 export default function Home() {
 
-  const style= {
-    backgroundImage: `url(${Homesplash.src})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center"
+  const videoStyle = {
+    width: '100vw',
+    height: '100vh',
+    objectFit: 'cover',
+    position: 'absolute',
+    left: '50%', /* % of surrounding element */
+    top: '50%',
+    transform: 'translate(-50%, -50%)',
+    zIndex: '-1'
   }
 
   return (
     <div>
-      <div className="bg-fixed" style={style}>
+      <video
+          autoPlay
+          loop
+          muted
+          style={videoStyle}
+      >
+        <source src='/arezo.mp4' type='video/mp4' />
+            Your browser does not support the video tag.
+      </video>
+      <div className="bg-fixed" >
         <div className="w-screen h-screen grid grid-cols-5">
           <Navbar dark={true} />
           <div className="-mt-96 col-span-full sm:col-span-2 text-center items-center flex p-8">
@@ -39,9 +51,9 @@ export default function Home() {
       </div>
 
       {/** Learn about us section */}
-      <div className="p-8 sm:p-24">
+      <div className="p-8 ">
         <div>
-          <div className="text-center sm:px-36 py-48 flex flex-col justify-center items-center">
+          <div className="text-center sm:px-16 md:px-24 lg:px-36 py-48 flex flex-col justify-center items-center">
             <img src="/hometextintro.png" className="flex w-fulls sm:w-3/4 h-auto" />
             <div className="m-8" />
             <DDLink text={"Learn about us"} href="/about" defaultUnderlined={true} />

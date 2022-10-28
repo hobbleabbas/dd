@@ -43,15 +43,15 @@ export default function Home() {
       <div className="bg-fixed">
         <div className=" h-screen grid grid-cols-5">
           <Navbar dark={true} />
-          <div className="-mt-96 col-span-full sm:col-span-2 text-center items-center flex p-8">
-            <div className="-mt-36 ml-0 sm:ml-8 lg:ml-16 w-full">
+          <div className="-mt-96 col-span-full sm:col-span-3 text-center items-center flex p-8">
+            <div className="-mt-24 ml-0 sm:ml-4 lg:ml-8 w-full">
               <SubTitle text={"Arézo"} dark={true} />
               <div className="m-12 sm:m-4" />
               <PageTitle text={"Amplifying the desire"} dark={true} />
               <PageTitle text={"To Feel Great"} dark={true} />
               <div className="m-4" />
-              <div className="mt-12 sm:mt-0" />
-              <DDLink text={"See Case Study"} href = "/bru" dark={true} defaultUnderlined={true} />
+              <div className="mt-12 sm:mt-8" />
+              <DDLink text={"See Case Study"} href = "/case-study/arezo" dark={true} defaultUnderlined={true} />
             </div>
           </div>
         </div>
@@ -68,10 +68,10 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:p-8 md:p-16">
           <Card 
-            title = {JSON.stringify(["Jewelry that Reflects", "Who You Are & Where", "You Are From"])}
-            sub_title = "Olive Tree Jewelry"
+            title = {JSON.stringify(["Blossoming Aesthetics", "A Floral Shop On A Mission"])}
+            sub_title = "Maison De Fleurs"
             link_text = "See case study"
-            link_href = "/case-study/olive-tree-jewelry"
+            link_href = "/case-study/maison-de-fleurs"
             image_src = "yourbrand.png"
           />
           <Card 
@@ -108,9 +108,9 @@ export default function Home() {
             Your browser does not support the video tag.
       </video>
 
-      <div className="p-24">
+      <div className="p-8">
         <div>
-          <div className="text-center px-48 pb-16">
+          <div className="text-center sm:px-24 md:px-36 lg:px-48 pb-16">
             <SubTitle text={"Olive Tree Jewelry"} />
             <div className="mb-8" />
             <PageTitle text = "Jewelry That Reflects Who You Are & Where You Are From" />
@@ -118,7 +118,7 @@ export default function Home() {
             <DDLink text={"See case study"} href="/about" defaultUnderlined={true} />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:p-8 md:p-16">
           <Card 
             title = {JSON.stringify(["FGC Introduces", "Premium Products Developed", "& Produced in Toronto"])}
             sub_title = "Friday Grooming Co."
@@ -164,8 +164,8 @@ export default function Home() {
 
       <div className="p-24">
         <div>
-          <div className="text-center px-48 pb-16">
-            <SubTitle text={"Maison De Fleurs"} />
+          <div className="text-center sm:px-24 md:px-36 lg:px-48 pb-16">
+            <SubTitle text={"Olive Tree Jewelry"} />
             <div className="mb-8" />
             <PageTitle text = "Jewelry That Reflects Who You Are & Where You Are From" />
             <div className="m-12" />
@@ -187,8 +187,8 @@ export default function Home() {
 
       <div className="p-24">
         <div>
-          <div className="text-center px-48 pb-16">
-            <div className="text-center px-12 sm:px-24 md:px-36 lg:px-72 flex flex-col justify-center items-center">
+          <div className="text-center md:px-24 lg:px-48 pb-16">
+            <div className=" flex flex-col justify-center items-center">
                 <img src={Beyond.src} className="flex w-full h-auto" />
             </div>
             <div className="m-12" />
@@ -196,6 +196,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
 
       <Footer />
     </div>

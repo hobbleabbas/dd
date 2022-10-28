@@ -205,7 +205,7 @@ export default function Work() {
 
             <div className="my-16" />
 
-            <NextPage dark={true} text="Contact" href={"/contact"} />
+            {/* <NextPage dark={true} text="Contact" href={"/contact"} /> */}
 
             <Footer dark={true}/>
         </div>

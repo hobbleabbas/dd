@@ -31,6 +31,14 @@ const people = [
         ]
     },
     { 
+        name: "Annar Layla Teja",
+        title: "Research Coordinator",
+        image: "/sana2.png",
+        paragraphs: [
+            "Focused on writing, editing, and publishing content for niches to promote growth and engagement for a business. Experienced in staying up to date with changing trend patterns, new platform updates or features to create a strategy catered to each business to meet their needs. Optimizing social media outlets to relay the business as knowledgeable and skillful using content specific to their industry and brand. Applying various methods, skills, knowledge, and experience to achieve a larger reach and new leads for clients. Monitoring multiple social media outlets, posts, and advertisements to achieve specific objectives to expand the business.",
+        ]
+    },
+    { 
         name: "Maryam Shah",
         title: "Director of Client Services",
         image: "/maryamshah.png",
@@ -40,16 +48,8 @@ const people = [
         ]
     },
     { 
-        name: "Annar Layla Teja",
-        title: "Research Coordinator",
-        image: "/sana2.png",
-        paragraphs: [
-            "Focused on writing, editing, and publishing content for niches to promote growth and engagement for a business. Experienced in staying up to date with changing trend patterns, new platform updates or features to create a strategy catered to each business to meet their needs. Optimizing social media outlets to relay the business as knowledgeable and skillful using content specific to their industry and brand. Applying various methods, skills, knowledge, and experience to achieve a larger reach and new leads for clients. Monitoring multiple social media outlets, posts, and advertisements to achieve specific objectives to expand the business.",
-        ]
-    },
-    { 
         name: "Abbas Molu",
-        title: "Manager of Operations",
+        title: "Videographer",
         image: "/abbasmolu.png",
         paragraphs: [
             "Need BIO",
@@ -124,7 +124,7 @@ export function PersonCard({ name, title, picture, paragraphs }) {
 
             </div>
             <p className="mt-8 font-semibold text-lg">{ name }</p>
-            <p className="mt-1 mb-4 font-regular text-md tracking-wide">{ title }</p>
+            <p className="mt-1 mb-4 font-light text-md tracking-wide">{ title }</p>
             <a onClick={()=>{setOpen(true)}} className='cursor-pointer text-slate-600 underline uppercase font-medium hover:opacity-50 underline-offset-8 hover:transition delay-50 text-xs'>
                 Read Bio
             </a>

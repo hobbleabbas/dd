@@ -13,10 +13,10 @@ const aboutParagraphs = [
         ],
         "text": [
             "We love to look beyond the surface of things — While we", 
-            "understand that it’s impossible to completely silence our",
-            "minds (designers do be crazy), we believe it’s far more",
-            "important to be present. That’s why we put all our ideas to",
-            "the test and take pride in our iterative processes."
+            " understand that it’s impossible to completely silence our",
+            " minds (designers do be crazy), we believe it’s far more",
+            " important to be present. That’s why we put all our ideas to",
+            " the test and take pride in our iterative processes."
         ]
     },
     {
@@ -26,8 +26,8 @@ const aboutParagraphs = [
         ],
         "text": [
             "It all begins with you. We love hearing your stories and",
-            "why you do what you do. Let us take you out for a coffee,",
-            "ideas flow better with caffeine in our system."
+            " why you do what you do. Let us take you out for a coffee,",
+            " ideas flow better with caffeine in our system."
         ]
     },
     {
@@ -38,8 +38,8 @@ const aboutParagraphs = [
         ],
         "text": [
             "Unified vision, individual ideas, combined artistry. We have",
-            "got some great minds at work that come together to",
-            "breathe life into your visions."
+            " got some great minds at work that come together to",
+            " breathe life into your visions."
         ]
     },
 ]

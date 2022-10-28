@@ -9,7 +9,7 @@ export function Card({ dark, title, sub_title, link_text, link_href, image_src }
                 <div className="m-4" />
                 <SubTitle text={sub_title} />
                 <div className="m-3" />
-                <h3 className="text-slate-800 capitalize text-3xl font-medium">{ JSON.parse(title).map((titleSection)=>(
+                <h3 className="text-slate-800 capitalize text-3xl lg:text-4xl font-medium">{ JSON.parse(title).map((titleSection)=>(
                     <span>{titleSection} <br /></span>
                 )) }</h3>
             </div>

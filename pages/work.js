@@ -43,13 +43,13 @@ const aboutParagraphs = [
         "image": "/work/dewji.png"
     },
     {
-        "company": "MAISON DE FLEURS",
+        "company": "Remé",
         "title": [
-            "Blossoming Aesthetics",
-            "A Floral Shop On A Mission",
+            "Essentials Giving",
+            "Comfort"
         ],
-        "link": "/case-study/maison-de-fleurs",
-        "image": "/work/maison.png"
+        "link": "/case-study/reme",
+        "image": "/work/xana.png"
     },
     {
         "company": "Olive Tree Jewelry",
@@ -62,23 +62,13 @@ const aboutParagraphs = [
         "image": "/work/olive.png"
     },
     {
-        "company": "Remé",
+        "company": "MAISON DE FLEURS",
         "title": [
-            "Essentials Giving",
-            "Comfort"
+            "Blossoming Aesthetics",
+            "A Floral Shop On A Mission",
         ],
-        "link": "/case-study/reme",
-        "image": "/work/xana.png"
-    },
-    {
-        "company": "Xana International",
-        "title": [
-            "Hospitality to Residential:",
-            "A Look into Canada’s",
-            "Greatest Renovated Spaces"
-        ],
-        "link": "/case-study/xana-international",
-        "image": "/work/reme.png"
+        "link": "/case-study/maison-de-fleurs",
+        "image": "/work/maison.png"
     },
     {
         "company": "Friday Grooming Co.",
@@ -91,21 +81,20 @@ const aboutParagraphs = [
         "image": "/work/friday.png"
     },
     {
-        "company": "SEQ Technology",
+        "company": "Xana International",
         "title": [
-            "Envisioning",
-            "Blissful Moments"
+            "Hospitality to Residential:",
+            "A Look into Canada’s",
+            "Greatest Renovated Spaces"
         ],
-        "link": "/case-study/seq-technology",
-        "image": "/work/seq.png"
+        "link": "/case-study/xana-international",
+        "image": "/work/reme.png"
     },
     {
         "company": "Bliss Beginnings",
         "title": [
-            "Automation & Digital",
-            "Transformations - ",
-            "Working Through Exceedingly",
-            "Complex Technical Challenges"
+            "Envisioning",
+            "Blissful Moments"
         ],
         "link": "/case-study/bliss-beginnings",
         "image": "/work/bliss.png"
@@ -113,11 +102,22 @@ const aboutParagraphs = [
     {
         "company": "Feldstein Family Law",
         "title": [
-            "Amplifying The Desire To",
-            "Feel Great"
+            "Amplifying The Desire",
+            "To Feel Great"
         ],
         "link": "/case-study/feldstein-family-law",
         "image": "/work/feldstein.png"
+    },
+    {
+        "company": "SEQ Technology",
+        "title": [
+            "Automation & Digital",
+            "Transformations - ",
+            "Working Through Exceedingly",
+            "Complex Technical Challenges"
+        ],
+        "link": "/case-study/seq-technology",
+        "image": "/work/seq.png"
     },
     {
         "company": "Prime Time Messenger",

@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="bg-black text-white min-h-screen">
             <Navbar dark={true} />
             <div className="py-16 flex flex-col items-center w-full justify-center align-center">
-                <p className="uppercase font-extralight text-md tracking-widest">Contact</p>
+                <p className="uppercase font-regular text-lg tracking-widest">Contact</p>
             </div>
 
             <div className="text-center px-12 sm:px-24 md:px-36 lg:px-72 flex flex-col justify-center items-center">

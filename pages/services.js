@@ -6,7 +6,7 @@ export default function Services() {
     return (
         <div className="h-full">
             <Navbar />
-            <div className="py-48 flex flex-col items-center w-full justify-center align-center">
+            <div className="py-36 flex flex-col items-center w-full justify-center align-center">
                 <p className="font-montserrat text-xl text-slate-800 uppercase font-semibold mb-8">Our Services</p>
                 <img src={"/surface.png"} className="w-3/4 h-auto" />
             </div>

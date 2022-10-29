@@ -35,6 +35,7 @@ export default function Home() {
           autoPlay
           loop
           muted
+          playsInline
           style={videoStyle}
       >
         <source src='/arezo.mp4' type='video/mp4' />
@@ -102,6 +103,7 @@ export default function Home() {
           autoPlay
           loop
           muted
+          playsInline
           style={secondVideoStyle}
       >
         <source src='/outdoor.mp4' type='video/mp4' />

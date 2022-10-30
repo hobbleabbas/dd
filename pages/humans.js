@@ -120,7 +120,7 @@ export function PersonCard({ name, title, picture, paragraphs }) {
 
     return (
         <div>
-            <div className="w-full h-96" style={style}>
+            <div className="w-full h-108" style={style}>
 
             </div>
             <p className="mt-8 font-semibold text-lg">{ name }</p>

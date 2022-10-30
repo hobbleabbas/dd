@@ -22,7 +22,7 @@ const aboutParagraphs = [
             "to Women’s Fashion"
         ],
         "link": "/case-study/shek",
-        "image": "/work/shek.png"
+        "image": "/work/olive.png"
     },
     {
         "company": "Möbel",
@@ -59,7 +59,7 @@ const aboutParagraphs = [
             "You Are From"
         ],
         "link": "/case-study/olive-tree-jewelry",
-        "image": "/work/olive.png"
+        "image": "/work/shek.png"
     },
     {
         "company": "MAISON DE FLEURS",

@@ -39,7 +39,7 @@ const aboutParagraphs = [
             "Personalized Brand",
             "Representing Individuality."
         ],
-        "link": "/case-study/dewji",
+        "link": "/case-study/dewji-realty",
         "image": "/work/dewji.png"
     },
     {

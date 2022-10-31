@@ -29,6 +29,28 @@ export default function Arezo() {
         "Marketing Collateral"
     ]
 
+    const secondVideoStyle = {
+        objectFit: 'cover',
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden',
+        zIndex: '-1'
+    }
+
+    const thirdVideoStyle = {
+        position: 'absolute',
+        right: '0',
+        bottom: '0',
+        minWidth: '100%',
+        minHeight: '100%',
+        width: 'auto',
+        height: 'auto',
+        zIndex: '-100',
+        backgroundSize: 'cover',
+        overflow: 'hidden',
+    }
+
+
     return (
         <div>
             <Navbar />
@@ -96,13 +118,25 @@ export default function Arezo() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 p-8 sm:p-12 gap-8">
                 <div>
-                    <div style={{
-                        backgroundImage: `url(${fifthImage.src})`,
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center"
-                    }} className="col-span-1">
-                        <div className="h-160 w-full mb-8">
+
+                    <div className="h-160 w-full mb-8 col-span-1">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            style={secondVideoStyle}
+                        >
+                            <source src='/casestudies/maison/5.mp4' type='video/mp4' />
+                        </video>
+                        <div style={{
+                            backgroundImage: `url(${fifthImage.src})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center"
+                        }} className="col-span-1">
+                            <div className="h-160 w-full mb-8">
+                            </div>
                         </div>
                     </div>
 
@@ -137,13 +171,24 @@ export default function Arezo() {
                         </div>
                     </div>
 
-                    <div style={{
-                        backgroundImage: `url(${seventhImage.src})`,
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center"
-                    }} className="col-span-1">
-                        <div className="h-128 w-full mb-8">
+                    <div className="h-128 w-full mb-8 col-span-1">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            style={secondVideoStyle}
+                        >
+                            <source src='/casestudies/maison/7.mp4' type='video/mp4' />
+                        </video>
+                        <div style={{
+                            backgroundImage: `url(${seventhImage.src})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center"
+                        }} className="col-span-1">
+                            <div className="h-148 w-full mb-8">
+                            </div>
                         </div>
                     </div>
 

@@ -37,8 +37,8 @@ export default function Arezo() {
             <LoadingSpinner />
             
             <NextPage
-                text={"PRIME TIME MESSENGER"}
-                href={"/case-study/prime-time-messenger"}
+                text={"SEQ TECHNOLOGY"}
+                href={"/case-study/seq-technology"}
                 dark={false}
             />
                 

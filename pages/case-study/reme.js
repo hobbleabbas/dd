@@ -34,11 +34,10 @@ export default function Arezo() {
             
             <div className="my-20 sm:my-24" />
 
-            <LoadingSpinner />
             
             <NextPage
-                text={"XANA INTERNATIONAL"}
-                href={"/case-study/xana-international"}
+                text={"Olive Tree Jewelry"}
+                href={"/case-study/olive-tree-jewelry"}
                 dark={false}
             />
                 

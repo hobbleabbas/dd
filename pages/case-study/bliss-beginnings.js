@@ -2,6 +2,9 @@ import Footer from "../../components/Footer";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import Navbar from "../../components/Navbar";
 import NextPage from "../../components/Nextpage";
+import secondImage from "../../public/casestudies/bliss/2.png"
+import thirdImage from "../../public/casestudies/bliss/3.png"
+import fourthImage from "../../public/casestudies/bliss/4.png"
 
 export default function Arezo() {
 
@@ -17,6 +20,14 @@ export default function Arezo() {
     const services = [
         "Messaging / Brand Voice Development",
     ]
+
+    const secondVideoStyle = {
+        objectFit: 'cover',
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden',
+        zIndex: '-1'
+    }
 
     return (
         <div>
@@ -36,7 +47,65 @@ export default function Arezo() {
 
             <div className="my-20 sm:my-24" />
 
-            <LoadingSpinner />
+            <div className="h-screen w-full mb-8 col-span-1">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={secondVideoStyle}
+                >
+                    <source src='/casestudies/bliss/1.mp4' type='video/mp4' />
+                </video>
+            </div>
+
+            <div className="h-screen w-full mb-8 col-span-1">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={secondVideoStyle}
+                >
+                    <source src='/casestudies/bliss/bliss.mp4' type='video/mp4' />
+                </video>
+            </div>
+
+            <div style={{
+                backgroundImage: `url(${thirdImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
+
+            <div className="my-20 sm:my-24" />
+
+            <div style={{
+                backgroundImage: `url(${fourthImage.src})`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
+
+            <div className="my-20 sm:my-24" />
+
+            <div style={{
+                backgroundImage: `url(${secondImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
+
+
             
             <NextPage
                 text={"FELDSTEIN FAMILY LAW"}

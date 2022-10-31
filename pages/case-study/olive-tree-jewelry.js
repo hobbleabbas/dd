@@ -2,10 +2,13 @@ import Footer from "../../components/Footer";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import Navbar from "../../components/Navbar";
 import NextPage from "../../components/Nextpage";
+import firstImage from '../../public/casestudies/olive/1.png'
+import secondImage from '../../public/casestudies/olive/2.png'
+import thirdImage from '../../public/casestudies/olive/3.png'
 
 export default function Arezo() {
 
-    const name = "OLIVE TREE JEWELRY"
+    const name = "Olive Tree Jewelry"
     const headers = [
         "Jewelry that Reflects",
         "Who You Are & Where",
@@ -35,11 +38,46 @@ export default function Arezo() {
 
             <div className="my-20 sm:my-24" />
 
-            <LoadingSpinner />
+            <div style={{
+                backgroundImage: `url(${firstImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }} className="">
+                <div className="h-screen sm:h-128 md:h-144 w-full">
+                </div>
+            </div>
+
+            <div className="my-20 sm:my-24" />
+
+            <div style={{
+                backgroundImage: `url(${secondImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }} className="">
+                <div className="h-screen sm:h-128 md:h-144 w-full">
+                </div>
+            </div>
+
+            <div className="my-20 sm:my-24" />
+
+            <div style={{
+                backgroundImage: `url(${thirdImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }} className="">
+                <div className="h-screen sm:h-128 md:h-144 w-full">
+                </div>
+            </div>
+
+
+
             
             <NextPage
-                text={"REMÉ"}
-                href={"/case-study/reme"}
+                text={"MAISON DE FLEURS"}
+                href={"/case-study/maison-de-fleurs"}
                 dark={false}
             />
                 

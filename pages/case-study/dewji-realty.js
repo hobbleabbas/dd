@@ -105,8 +105,8 @@ export default function Arezo() {
 
             
             <NextPage
-                text={"MAISON DE FLEURS"}
-                href={"/case-study/maison-de-fleurs"}
+                text={"Remé"}
+                href={"/case-study/reme"}
                 dark={false}
             />
                 

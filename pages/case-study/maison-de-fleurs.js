@@ -217,8 +217,8 @@ export default function Arezo() {
 
             
             <NextPage
-                text={"OLIVE TREE JEWELRY"}
-                href={"/case-study/olive-tree-jewelry"}
+                text={"Friday Grooming Co."}
+                href={"/case-study/friday-grooming-co"}
                 dark={false}
             />
                 

@@ -37,8 +37,8 @@ export default function Arezo() {
             <LoadingSpinner />
             
             <NextPage
-                text={"FRIDAY GROOMING CO."}
-                href={"/case-study/friday-grooming-co"}
+                text={"Bliss Beginnings"}
+                href={"/case-study/bliss-beginnings"}
                 dark={false}
             />
                 

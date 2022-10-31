@@ -78,17 +78,29 @@ export default function Arezo() {
             <div className="my-20 sm:my-24" />
 
             <a href="https://www.youtube.com/watch?v=A3LaRXxoTwY" rel="noreferrer" target="_blank">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    style={secondVideoStyle}
-                    className="hover:blur-md transition ease-in-out cursor-pointer"
-                >
-                    <source src='/casestudies/dewji/2.mp4' type='video/mp4' />
-                        Your browser does not support the video tag.
-                </video>
+                    
+                <div style={{
+                    width: '100%',
+                    height: '100%',
+                    textAlign: 'center',
+                }}>
+                    <div style={{
+                        display: 'inline-block',
+                        position: 'relative',
+                    }}>
+                        <div className="absolute w-full h-full flex justify-center align-center items-center uppercase text-white text-8xl font-semibold tracking-widest">Play</div>
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            style={secondVideoStyle}
+                        >
+                            <source src='/casestudies/dewji/2.mp4' type='video/mp4' />
+                                Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
             </a>
 
             

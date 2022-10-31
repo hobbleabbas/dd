@@ -2,6 +2,18 @@ import Footer from "../../components/Footer";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import Navbar from "../../components/Navbar";
 import NextPage from "../../components/Nextpage";
+import firstImage from "../../public/casestudies/maison/1.jpg"
+import secondImage from "../../public/casestudies/maison/2.jpg"
+import thirdImage from "../../public/casestudies/maison/3.jpg"
+import fourthImage from "../../public/casestudies/maison/4.jpg"
+import fifthImage from "../../public/casestudies/maison/5.jpg"
+import sixthImage from "../../public/casestudies/maison/6.png"
+import seventhImage from "../../public/casestudies/maison/7.jpg"
+import eighthImage from "../../public/casestudies/maison/8.png"
+import ninthImage from "../../public/casestudies/maison/9.png"
+import tenthImage from "../../public/casestudies/maison/10.jpg"
+import eleventhImage from "../../public/casestudies/maison/11.png"
+import Indexsplash2 from "../../public/indexsplash2.png"
 
 export default function Arezo() {
 
@@ -34,8 +46,139 @@ export default function Arezo() {
             </div>
 
             <div className="my-20 sm:my-24" />
+            
+            <div style={{
+                backgroundImage: `url(${firstImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
 
-            <LoadingSpinner />
+            <div className="my-8 sm:my-12" />
+
+            <div style={{
+                backgroundImage: `url(${secondImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
+
+
+            <div className="my-8 sm:my-12" />
+
+            <div style={{
+                backgroundImage: `url(${thirdImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
+
+            <div className="my-8 sm:my-12" />
+
+            <div style={{
+                backgroundImage: `url(${fourthImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 p-8 sm:p-12 gap-8">
+                <div>
+                    <div style={{
+                        backgroundImage: `url(${fifthImage.src})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center"
+                    }} className="col-span-1">
+                        <div className="h-160 w-full mb-8">
+                        </div>
+                    </div>
+
+                    <div style={{
+                        backgroundImage: `url(${eighthImage.src})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center"
+                    }} className="col-span-1">
+                        <div className="h-128 w-full mb-8">
+                        </div>
+                    </div>
+
+                    <div style={{
+                        backgroundImage: `url(${tenthImage.src})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center"
+                    }} className="col-span-1">
+                        <div className="h-160 w-full mb-8">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style={{
+                        backgroundImage: `url(${sixthImage.src})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center"
+                    }} className="col-span-1">
+                        <div className="h-96 w-full mb-8">
+                        </div>
+                    </div>
+
+                    <div style={{
+                        backgroundImage: `url(${seventhImage.src})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center"
+                    }} className="col-span-1">
+                        <div className="h-128 w-full mb-8">
+                        </div>
+                    </div>
+
+                    <div style={{
+                        backgroundImage: `url(${ninthImage.src})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center"
+                    }} className="col-span-1">
+                        <div className="h-96 w-full mb-8">
+                        </div>
+                    </div>
+
+                    <div style={{
+                        backgroundImage: `url(${eleventhImage.src})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center"
+                    }} className="col-span-1">
+                        <div className="h-120 w-full mb-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style={{
+                backgroundImage: `url(${Indexsplash2.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
+
             
             <NextPage
                 text={"OLIVE TREE JEWELRY"}

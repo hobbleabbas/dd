@@ -17,6 +17,48 @@ export default function Arezo() {
         "Social Media"
     ]
 
+    const videoStyle = {
+        width: '100vw',
+        height: '100vh',
+        objectFit: 'cover',
+        position: 'absolute',
+        left: '50%', /* % of surrounding element */
+        top: '50%',
+        transform: 'translate(-50%, -50%)',
+        zIndex: '-1'
+      }
+    
+      const secondVideoStyle = {
+        width: '100vw',
+        height: '100vh',
+        objectFit: 'fill',
+        zIndex: '-1'
+      }
+
+      const thirdVideoStyle = {
+        position: 'absolute',
+        right: '0',
+        bottom: '0',
+        minWidth: '100%',
+        minHeight: '100%',
+        width: 'auto',
+        height: 'auto',
+        zIndex: '-100',
+        backgroundSize: 'cover',
+        overflow: 'hidden',
+      }
+
+      const pStyle = {
+        position: 'absolute',
+        textAlign: 'center',
+        fontSize: '4em',
+        zIndex: '9999',
+        color: 'white',
+        top: '50%',
+        left:'50%',
+        transform: 'translate(-50%,-50%)',
+      }
+
     return (
         <div>
             <Navbar />
@@ -35,7 +77,20 @@ export default function Arezo() {
 
             <div className="my-20 sm:my-24" />
 
-            <LoadingSpinner />
+            <a href="https://www.youtube.com/watch?v=6Zg0QZ1J3Z8" target="_blank">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={secondVideoStyle}
+                    className="hover:blur-md transition ease-in-out cursor-pointer"
+                >
+                    <source src='/casestudies/dewji/2.mp4' type='video/mp4' />
+                        Your browser does not support the video tag.
+                </video>
+            </a>
+
             
             <NextPage
                 text={"MAISON DE FLEURS"}

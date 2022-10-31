@@ -129,15 +129,6 @@ export default function Arezo() {
                         >
                             <source src='/casestudies/maison/5.mp4' type='video/mp4' />
                         </video>
-                        <div style={{
-                            backgroundImage: `url(${fifthImage.src})`,
-                            backgroundSize: "cover",
-                            backgroundRepeat: "no-repeat",
-                            backgroundPosition: "center"
-                        }} className="col-span-1">
-                            <div className="h-160 w-full mb-8">
-                            </div>
-                        </div>
                     </div>
 
                     <div style={{

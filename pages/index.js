@@ -59,7 +59,7 @@ export default function Home() {
       </div>
 
       {/** Learn about us section */}
-      <div className="p-8 ">
+      <div className="p-4 sm:p-8">
         <div>
           <div className="text-center sm:px-16 md:px-24 lg:px-30 py-48 flex flex-col justify-center items-center">
             <img src="/hometextintro.png" className="flex w-fulls sm:w-3/4 h-auto" />
@@ -126,7 +126,7 @@ export default function Home() {
           </a>
     
 
-      <div className="p-8">
+      <div className="sm:p-4 p-8">
         <div className="pt-24">
           <div className="text-center sm:px-24 md:px-36 lg:px-48 pb-16">
             <SubTitle text={"Olive Tree Jewelry"} />
@@ -136,7 +136,7 @@ export default function Home() {
             <DDLink text={"See case study"} href="/case-study/olive-tree-jewelry" defaultUnderlined={true} />
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:p-8 md:p-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-0  sm:p-8 md:p-16">
           <Card 
             title = {JSON.stringify(["FGC Introduces", "Premium Products Developed", "& Produced in Toronto"])}
             sub_title = "Friday Grooming Co."
@@ -203,7 +203,7 @@ export default function Home() {
       </div>
 
 
-      <div className="p-24">
+      <div className="px-8 py-24 sm:px-24">
         <div>
           <div className="text-center md:px-24 lg:px-48 pb-16">
             <div className=" flex flex-col justify-center items-center">

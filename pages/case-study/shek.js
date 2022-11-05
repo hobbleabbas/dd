@@ -35,6 +35,13 @@ export default function Arezo() {
         "Web Design / Social Media / Digital Design"
     ]
 
+    const videoStyle = {
+        width: '100vw',
+        height: 'auto',
+        objectFit: 'cover',
+        zIndex: '-1'
+    }
+
     return (
         <div>
             <Navbar />
@@ -53,15 +60,16 @@ export default function Arezo() {
 
             <div className="my-20 sm:my-24" />
 
-            <div style={{
-                backgroundImage: `url(${firstImage.src})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
-                }}>
-                <div className="h-150 w-full">
-                </div>
-            </div>
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={videoStyle}
+            >
+                <source src='/casestudies/shek/main.mp4' type='video/mp4' />
+                    Your browser does not support the video tag.
+            </video>
 
             <div className="my-6 sm:my-8" />
 
@@ -228,56 +236,64 @@ export default function Arezo() {
             
             <div className="my-6 sm:my-8" />
 
-            <div style={{
-                backgroundImage: `url(${fifteenthImage.src})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
-                }}>
-                <div className="h-160 w-full shadow-inner">
-                </div>
-            </div>
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={videoStyle}
+            >
+                <source src='/casestudies/shek/23.mp4' type='video/mp4' />
+                    Your browser does not support the video tag.
+            </video>
 
-            <div className = "my-12 sm:my-16 mx-12 sm:mx-16 grid sm:grid-cols-4 gap-4">
-                <div style={{
-                    backgroundImage: `url(${sixteenthImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    }}>
-                    <div className="h-160 w-full">
-                    </div>
-                </div>
+            <div className = "my-12 sm:my-16 mx-12 sm:mx-16 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={videoStyle}
+                >
+                    <source src='/casestudies/shek/3.mp4' type='video/mp4' />
+                        Your browser does not support the video tag.
+                </video>
 
-                <div style={{
-                    backgroundImage: `url(${seventeenthImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    }}>
-                    <div className="h-160 w-full">
-                    </div>
-                </div>
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={videoStyle}
+                >
+                    <source src='/casestudies/shek/2.mp4' type='video/mp4' />
+                        Your browser does not support the video tag.
+                </video>
 
-                <div style={{
-                    backgroundImage: `url(${eighteenthImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    }}>
-                    <div className="h-160 w-full">
-                    </div>
-                </div>
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={videoStyle}
+                >
+                    <source src='/casestudies/shek/4.mp4' type='video/mp4' />
+                        Your browser does not support the video tag.
+                </video>
 
-                <div style={{
-                    backgroundImage: `url(${nineteenthImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    }}>
-                    <div className="h-160 w-full">
-                    </div>
-                </div>
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={videoStyle}
+                >
+                    <source src='/casestudies/shek/22.mp4' type='video/mp4' />
+                        Your browser does not support the video tag.
+                </video>
+
+                
             </div>
 
             <NextPage

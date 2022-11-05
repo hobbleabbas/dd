@@ -67,7 +67,7 @@ export default function Home() {
             <DDLink text={"Learn about us"} href="/about" defaultUnderlined={true} />
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:p-8 md:p-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-0 sm:p-8 md:p-16">
           <Card 
             title = {JSON.stringify(["Blossoming Aesthetics", "A Floral Shop On A Mission"])}
             sub_title = "Maison De Fleurs"

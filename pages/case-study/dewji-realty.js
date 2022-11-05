@@ -77,7 +77,7 @@ export default function Arezo() {
 
             <div className="my-20 sm:my-24" />
 
-            <a href="https://www.youtube.com/watch?v=A3LaRXxoTwY" rel="noreferrer" target="_blank">
+            <a href="https://www.youtube.com/watch?v=GdXF_hEGWgA" rel="noreferrer" target="_blank">
                     
                 <div style={{
                     width: '100%',
@@ -88,7 +88,7 @@ export default function Arezo() {
                         display: 'inline-block',
                         position: 'relative',
                     }}>
-                        <div className="absolute w-full h-full flex justify-center align-center items-center uppercase text-white text-8xl font-semibold tracking-widest">Play</div>
+                        <div className="absolute w-full hover:backdrop-blur-sm h-full flex justify-center align-center items-center uppercase text-white text-8xl font-semibold tracking-widest">Play</div>
                         <video
                             autoPlay
                             loop

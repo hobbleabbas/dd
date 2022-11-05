@@ -99,25 +99,41 @@ export default function Home() {
         </div>
       </div>
 
-      <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={secondVideoStyle}
-      >
-        <source src='/outdoor.mp4' type='video/mp4' />
-            Your browser does not support the video tag.
-      </video>
+        <a href="https://www.youtube.com/watch?v=A3LaRXxoTwY" rel="noreferrer" target="_blank">
+                    
+              <div style={{
+                  width: '100%',
+                  height: '100%',
+                  textAlign: 'center',
+              }}>
+                  <div style={{
+                      display: 'inline-block',
+                      position: 'relative',
+                  }}>
+                      <div className="absolute w-full h-full hover:backdrop-blur-sm flex justify-center align-center items-center uppercase text-white text-8xl font-semibold tracking-widest">Play</div>
+                      <video
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          style={secondVideoStyle}
+                      >
+                          <source src='/outdoor.mp4' type='video/mp4' />
+                              Your browser does not support the video tag.
+                      </video>
+                  </div>
+              </div>
+          </a>
+    
 
       <div className="p-8">
-        <div>
+        <div className="pt-24">
           <div className="text-center sm:px-24 md:px-36 lg:px-48 pb-16">
             <SubTitle text={"Olive Tree Jewelry"} />
             <div className="mb-8" />
             <PageTitle text = "Jewelry That Reflects Who You Are & Where You Are From" />
             <div className="m-12" />
-            <DDLink text={"See case study"} href="/about" defaultUnderlined={true} />
+            <DDLink text={"See case study"} href="/case-study/olive-tree-jewelry" defaultUnderlined={true} />
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:p-8 md:p-16">
@@ -171,7 +187,7 @@ export default function Home() {
             <div className="mb-8" />
             <PageTitle text = "Jewelry That Reflects Who You Are & Where You Are From" />
             <div className="m-12" />
-            <DDLink text={"See case study"} href="/about" defaultUnderlined={true} />
+            <DDLink text={"See case study"} href="/case-study/olive-tree-jewelry" defaultUnderlined={true} />
           </div>
         </div>
       </div>

@@ -44,7 +44,7 @@ export default function Arezo() {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center"
                 }} className="">
-                <div className="h-screen sm:h-128 md:h-144 w-full">
+                <div className="h-screen w-full">
                 </div>
             </div>
 
@@ -54,9 +54,12 @@ export default function Arezo() {
                 backgroundImage: `url(${secondImage.src})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
+                backgroundPosition: "center",
+                width: '100%',
+                height: 'auto',
+                aspectRatio:'16/9',
                 }} className="">
-                <div className="h-screen sm:h-128 md:h-144 w-full">
+                <div className="h-screen w-full">
                 </div>
             </div>
 
@@ -66,9 +69,12 @@ export default function Arezo() {
                 backgroundImage: `url(${thirdImage.src})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
+                backgroundPosition: "center",
+                width: '100%',
+                height: 'auto',
+                aspectRatio:'16/9',
                 }} className="">
-                <div className="h-screen sm:h-128 md:h-144 w-full">
+                <div className="w-full h-screen lg:h-256">
                 </div>
             </div>
 

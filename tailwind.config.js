@@ -18,6 +18,9 @@ module.exports = {
         '150': '37.5rem',
         '160': '40rem',
         '192': '48rem',
+        '200': '50rem',
+        '240': '60rem',
+        '256': '64rem',
       }
     },
     fontFamily: {

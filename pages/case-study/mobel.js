@@ -96,11 +96,17 @@ export default function Arezo() {
             <div className="my-20 sm:my-24" />
 
             <div className="grid sm:grid-cols-3 gap-16 mx-24 sm:mx-36">
-                <img src={sixthImage.src} />
+                <div className="flex justify-center">
+                    <img src={sixthImage.src} />
+                </div>
 
-                <img src={seventhImage.src} />
+                <div className="flex justify-center">
+                    <img src={seventhImage.src} />
+                </div>
 
-                <img src={eighthImage.src} />
+                <div className="flex justify-center">
+                    <img src={eighthImage.src} />
+                </div>
             </div>
 
             <NextPage

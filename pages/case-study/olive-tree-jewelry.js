@@ -72,7 +72,6 @@ export default function Arezo() {
                 backgroundPosition: "center",
                 width: '100%',
                 height: 'auto',
-                aspectRatio:'16/9',
                 }} className="">
                 <div className="w-full h-screen lg:h-256">
                 </div>

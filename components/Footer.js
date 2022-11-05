@@ -6,7 +6,7 @@ function classNames(...classes) {
 
 export default function Footer({ dark }) {
     return (
-        <div className={classNames(dark ? "bg-black text-white" : "", "px-16 py-8")}>
+        <div className={classNames(dark ? "bg-black text-white" : "", "px-4 sm:px-16 py-8")}>
             <div className={classNames(dark ? "border-t border-white" : "border-t border-black", "")}>
                 <div className="grid grid-cols-2 gap-0">
                     <div className={classNames(dark ? "text-white" : "text-slate-700", "text-sm col-span-1 prose py-4")}>

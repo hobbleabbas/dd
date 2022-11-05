@@ -21,7 +21,7 @@ export default function Footer({ dark }) {
                             </p>
                             <DDLink dark={dark} text="Contact us" href={"/contact"} />
                         </div>
-                        <div className="mt-16 flex justify-between">
+                        <div className="mt-16 flex flex-col sm:flex-row justify-between">
                             <div className="">
                                 <DDLink dark={dark} text="Instagram" href={"https://www.instagram.com/digitaldashteam/"} /> | <DDLink dark={dark} text="Linkedin" href={"https://www.linkedin.com/company/digitaldashteam"} /> | <DDLink dark={dark} text="Twitter" href={"https://twitter.com/DigitalDashTeam"} />
                             </div>

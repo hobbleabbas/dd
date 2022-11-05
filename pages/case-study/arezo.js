@@ -17,6 +17,14 @@ import twelfthImage from "../../public/casestudies/arezo/12.png"
 export default function Arezo() {
 
     const name = "ARÉZO"
+
+    const videoStyle = {
+        width: '100vw',
+        height: '100vh',
+        objectFit: 'cover',
+        zIndex: '-1'
+      }
+
     const headers = [
         "Amplifying The Desire",
         "To Feel Great"
@@ -45,15 +53,16 @@ export default function Arezo() {
             
             <div className="my-20 sm:my-24" />
 
-            <div style={{
-                backgroundImage: `url(${firstImage.src})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
-                }}>
-                <div className="h-screen w-full">
-                </div>
-            </div>
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={videoStyle}
+            >
+                <source src='/arezo.mp4' type='video/mp4' />
+                    Your browser does not support the video tag.
+            </video>
 
             <div className="mx-4 md:mx-4 lg:mx-4 my-3 md:my-3 lg:my-3">
                 <div className="w-full grid sm:grid-cols-3 gap-4">
@@ -164,15 +173,16 @@ export default function Arezo() {
 
                 <div className="my-4" />
 
-                <div style={{
-                    backgroundImage: `url(${eleventhImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                }} className="col-span-1">
-                    <div className="h-160 w-full mb-4">
-                    </div>
-                </div>
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={videoStyle}
+                >
+                    <source src='/casestudies/arezo/11.mp4' type='video/mp4' />
+                        Your browser does not support the video tag.
+                </video>
 
                 <div className="my-4" />
 

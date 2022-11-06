@@ -86,6 +86,7 @@ export default function Arezo() {
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center"
+                
                 }}>
                 <div className="h-screen w-full">
                 </div>
@@ -154,10 +155,10 @@ export default function Arezo() {
                 <div>
                     <div style={{
                         backgroundImage: `url(${sixthImage.src})`,
-                        backgroundSize: "cover",
+                        backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center"
-                    }} className="col-span-1">
+                        backgroundPosition: "center",
+                    }} className="col-span-1 bg-black">
                         <div className="h-96 w-full mb-8">
                         </div>
                     </div>

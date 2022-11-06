@@ -2,19 +2,32 @@ import Footer from "../../components/Footer";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import Navbar from "../../components/Navbar";
 import NextPage from "../../components/Nextpage";
+import firstImage from "../../public/casestudies/seq/1.png";
+import secondImage from "../../public/casestudies/seq/2.png";
+import thirdImage from "../../public/casestudies/seq/3.png";
+import fourthImage from "../../public/casestudies/seq/4.png";
 
-export default function Arezo() {
+export default function SEQ() {
 
     const name = "SEQ Technology"
 
     const headers = [
-        "Envisioning",
-        "Blissful Moments"
+        "Automations & Digital",
+        "Transformations - ",
+        "Working Through Exceedingly",
+        "Complex Technical Challenges"
     ]
 
     const services = [
         "Messaging / Brand Voice Development",
     ]
+
+    const secondVideoStyle = {
+        width: '100vw',
+        height: '100vh',
+        objectFit: 'contain',
+        zIndex: '-1'
+    }
 
     return (
         <div>
@@ -34,7 +47,91 @@ export default function Arezo() {
 
             <div className="my-20 sm:my-24" />
 
-            <LoadingSpinner />
+            <div style={{
+                backgroundImage: `url(${firstImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
+
+            <div className="my-12 sm:my-16 flex justify-center">
+                <div className = "grid sm:grid-cols-2 sm:gap-16 w-1/2">
+                    <div style={{
+                        width: '100%',
+                        height: '100%',
+                        textAlign: 'center',
+                    }}>
+                        <div style={{
+                            display: 'inline-block',
+                            position: 'relative',
+                        }}>
+                            {/* <div className="absolute w-full hover:backdrop-blur-sm h-full flex justify-center align-center items-center uppercase text-white text-8xl font-semibold tracking-widest">Play</div> */}
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                style={secondVideoStyle}
+                                className="w-full h-full"
+                            >
+                                <source src='/casestudies/seq/5.mp4' type='video/mp4' />
+                            </video>
+                            
+                        </div>
+                    </div>
+
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        style={secondVideoStyle}
+                    >
+                        <source src='/casestudies/seq/6.mp4' type='video/mp4' />
+                    </video>
+                </div>
+            </div>
+
+            <div style={{
+                backgroundImage: `url(${secondImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
+
+            <div className="my-20 sm:my-24">
+                <div style={{
+                    backgroundImage: `url(${thirdImage.src})`,
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center"
+                    
+                    }}>
+                    <div className="h-screen w-auto">
+                    </div>
+                </div>
+            </div>
+
+            <div style={{
+                backgroundImage: `url(${fourthImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                
+                }}>
+                <div className="h-screen w-full">
+                </div>
+            </div>
+
+
             
             
             <NextPage

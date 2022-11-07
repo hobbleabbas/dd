@@ -16,6 +16,13 @@ export default function Arezo() {
         "Video / Social Media / Art Direction"
     ]
 
+    const videoStyle = {
+        width: '100vw',
+        height: 'auto',
+        objectFit: 'cover',
+        zIndex: '-1'
+    }
+
     return (
         <div>
             <Navbar />
@@ -34,7 +41,59 @@ export default function Arezo() {
             
             <div className="my-20 sm:my-24" />
 
-            <LoadingSpinner />
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={videoStyle}
+            >
+                <source src='/casestudies/xana/1.mp4' type='video/mp4' />
+                    Your browser does not support the video tag.
+            </video>
+
+            <div className="my-20 sm:my-24 flex justify-center">
+                <div className="w-2/3  grid grid-cols-1 sm:grid-cols-3 gap-16">
+                    <a className="text-center relative" href="https://youtube.com/shorts/IAqulXdt6m4?feature=share" rel="noreferrer">
+                        <img src="/casestudies/xana/1.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                    <a className="text-center relative" href="https://youtube.com/shorts/CtBQdOH9yCU?feature=share" rel="noreferrer">
+                        <img src="/casestudies/xana/2.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                    <a className="text-center relative" href="https://youtube.com/shorts/_SSKGcIrFv8?feature=share" rel="noreferrer">
+                        <img src="/casestudies/xana/3.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                </div>
+            </div>
+
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={videoStyle}
+            >
+                <source src='/casestudies/xana/2.mp4' type='video/mp4' />
+                    Your browser does not support the video tag.
+            </video>
             
             <NextPage
                 text={"Bliss Beginnings"}

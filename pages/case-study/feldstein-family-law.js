@@ -34,8 +34,61 @@ export default function Arezo() {
 
             <div className="my-20 sm:my-24" />
 
-            <LoadingSpinner />
-            
+            <div className="my-20 sm:my-24 flex justify-center">
+                <div className="w-2/3  grid grid-cols-1 sm:grid-cols-3 gap-16">
+                    <a href="#" className="text-center relative bg-white h-108 w-[13rem] md:h-144 md:w-[17rem]">
+                        <img src="/casestudies/feldstein/1.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-extrabold text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                    <a href="#" className="text-center relative bg-white h-108 w-[13rem] md:h-144 md:w-[17rem]">
+                        <img src="/casestudies/feldstein/2.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-extrabold text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                    <a href="#" className="text-center relative bg-white h-108 w-[13rem] md:h-144 md:w-[17rem]">
+                        <img src="/casestudies/feldstein/3.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-extrabold text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                </div>
+            </div>
+
+            <div className="my-20 sm:my-24 flex justify-center">
+                <div className="w-1/2  grid grid-cols-1 sm:grid-cols-2 gap-16">
+                    <a href="#" className="text-center relative bg-white h-108 w-[13rem] md:h-144 md:w-[17rem]">
+                        <img src="/casestudies/feldstein/4.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-extrabold text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                    <a href="#" className="text-center relative bg-white h-108 w-[13rem] md:h-144 md:w-[17rem]">
+                        <img src="/casestudies/feldstein/5.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-extrabold text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                </div>
+            </div>
+
             <NextPage
                 text={"SEQ TECHNOLOGY"}
                 href={"/case-study/seq-technology"}

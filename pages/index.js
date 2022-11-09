@@ -99,31 +99,30 @@ export default function Home() {
         </div>
       </div>
 
-        <a href="https://www.youtube.com/watch?v=A3LaRXxoTwY" rel="noreferrer" target="_blank">
-                    
+      <a href="https://www.youtube.com/watch?v=GdXF_hEGWgA" rel="noreferrer" target="_blank">
+          <div style={{
+              width: '100%',
+              height: '100%',
+              textAlign: 'center',
+          }}>
               <div style={{
-                  width: '100%',
-                  height: '100%',
-                  textAlign: 'center',
+                  display: 'inline-block',
+                  position: 'relative',
               }}>
-                  <div style={{
-                      display: 'inline-block',
-                      position: 'relative',
-                  }}>
-                      <div className="absolute w-full h-full hover:backdrop-blur-sm flex justify-center align-center items-center uppercase text-white text-8xl font-semibold tracking-widest">Play</div>
-                      <video
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          style={secondVideoStyle}
-                      >
-                          <source src='/outdoor.mp4' type='video/mp4' />
-                              Your browser does not support the video tag.
-                      </video>
-                  </div>
+                  <div className="absolute w-full h-full hover:backdrop-blur-sm flex justify-center align-center items-center uppercase text-white text-8xl font-semibold tracking-widest">Play</div>
+                  <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      style={secondVideoStyle}
+                  >
+                      <source src='/outdoor.mp4' type='video/mp4' />
+                          Your browser does not support the video tag.
+                  </video>
               </div>
-          </a>
+          </div>
+      </a>
     
 
       <div className="sm:p-4 p-8">

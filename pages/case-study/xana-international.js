@@ -41,16 +41,30 @@ export default function Arezo() {
             
             <div className="my-20 sm:my-24" />
 
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                style={videoStyle}
-            >
-                <source src='/casestudies/xana/1.mp4' type='video/mp4' />
-                    Your browser does not support the video tag.
-            </video>
+            <a href="https://www.youtube.com/watch?v=-L5CxORZIss" rel="noreferrer" target="_blank">
+                <div style={{
+                    width: '100%',
+                    height: '100%',
+                    textAlign: 'center',
+                }}>
+                    <div style={{
+                        display: 'inline-block',
+                        position: 'relative',
+                    }}>
+                        <div className="absolute w-full h-full hover:backdrop-blur-sm flex justify-center align-center items-center uppercase text-white text-8xl font-semibold tracking-widest">Play</div>
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            style={videoStyle}
+                        >
+                            <source src='/casestudies/xana/1.mp4' type='video/mp4' />
+                                Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </a>
 
             <div className="my-20 sm:my-24 flex justify-center">
                 <div className="w-2/3  grid grid-cols-1 sm:grid-cols-3 gap-16">
@@ -84,16 +98,32 @@ export default function Arezo() {
                 </div>
             </div>
 
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                style={videoStyle}
-            >
-                <source src='/casestudies/xana/2.mp4' type='video/mp4' />
-                    Your browser does not support the video tag.
-            </video>
+            
+
+            <a href="https://www.youtube.com/watch?v=1Yb1L-1O9cE" rel="noreferrer" target="_blank">
+                <div style={{
+                    width: '100%',
+                    height: '100%',
+                    textAlign: 'center',
+                }}>
+                    <div style={{
+                        display: 'inline-block',
+                        position: 'relative',
+                    }}>
+                        <div className="absolute w-full h-full hover:backdrop-blur-sm flex justify-center align-center items-center uppercase text-white text-8xl font-semibold tracking-widest">Play</div>
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            style={videoStyle}
+                        >
+                            <source src='/casestudies/xana/2.mp4' type='video/mp4' />
+                                Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </a>
             
             <NextPage
                 text={"Bliss Beginnings"}

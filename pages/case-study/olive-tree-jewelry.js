@@ -50,6 +50,38 @@ export default function Arezo() {
 
             <div className="my-20 sm:my-24" />
 
+            <div className="my-20 sm:my-24 flex justify-center">
+                <div className="w-2/3  grid grid-cols-1 sm:grid-cols-3 gap-16">
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/MwI_ZzTMBY4" rel="noreferrer">
+                        <img src="/casestudies/olive/4.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/ZO0IfyA-ACE" rel="noreferrer">
+                        <img src="/casestudies/olive/5.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/nfJ-mQ7gBVw" rel="noreferrer">
+                        <img src="/casestudies/olive/6.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                </div>
+            </div>
+
             <div style={{
                 backgroundImage: `url(${secondImage.src})`,
                 backgroundSize: "cover",
@@ -60,6 +92,38 @@ export default function Arezo() {
                 aspectRatio:'16/9',
                 }} className="">
                 <div className="h-screen w-full">
+                </div>
+            </div>
+
+            <div className="my-20 sm:my-24 flex justify-center">
+                <div className="w-2/3  grid grid-cols-1 sm:grid-cols-3 gap-16">
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/VWYRhJbZ80A" rel="noreferrer">
+                        <img src="/casestudies/olive/7.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/tw7kAk9hSI0" rel="noreferrer">
+                        <img src="/casestudies/olive/8.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/jc0OpBFaIKA" rel="noreferrer">
+                        <img src="/casestudies/olive/9.png" className="col-span-1 hover:blur-sm" />
+                        <p style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                    </a>
                 </div>
             </div>
 

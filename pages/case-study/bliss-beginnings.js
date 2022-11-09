@@ -11,10 +11,8 @@ export default function Arezo() {
     const name = "Bliss Beginnings"
 
     const headers = [
-        "Automation & Digital",
-        "Transformations - ",
-        "Working Through Exceedingly",
-        "Complex Technical Challenges"
+        "Envisioning",
+        "Blissful Moments"
     ]
 
     const services = [

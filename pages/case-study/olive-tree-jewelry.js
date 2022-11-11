@@ -52,7 +52,7 @@ export default function Arezo() {
 
             <div className="my-20 sm:my-24 flex justify-center">
                 <div className="w-2/3  grid grid-cols-1 sm:grid-cols-3 gap-16">
-                    <a className="text-center relative" href="https://www.youtube.com/shorts/MwI_ZzTMBY4" rel="noreferrer">
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/MwI_ZzTMBY4" target="_blank" rel="noreferrer">
                         <img src="/casestudies/olive/4.png" className="col-span-1 hover:blur-sm" />
                         <p style={{
                             position: 'absolute',
@@ -61,7 +61,7 @@ export default function Arezo() {
                             transform: 'translate(-50%, -50%)',
                             }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
                     </a>
-                    <a className="text-center relative" href="https://www.youtube.com/shorts/ZO0IfyA-ACE" rel="noreferrer">
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/ZO0IfyA-ACE" target="_blank" rel="noreferrer">
                         <img src="/casestudies/olive/5.png" className="col-span-1 hover:blur-sm" />
                         <p style={{
                             position: 'absolute',
@@ -70,7 +70,7 @@ export default function Arezo() {
                             transform: 'translate(-50%, -50%)',
                             }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
                     </a>
-                    <a className="text-center relative" href="https://www.youtube.com/shorts/nfJ-mQ7gBVw" rel="noreferrer">
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/nfJ-mQ7gBVw" target="_blank" rel="noreferrer">
                         <img src="/casestudies/olive/6.png" className="col-span-1 hover:blur-sm" />
                         <p style={{
                             position: 'absolute',
@@ -97,7 +97,7 @@ export default function Arezo() {
 
             <div className="my-20 sm:my-24 flex justify-center">
                 <div className="w-2/3  grid grid-cols-1 sm:grid-cols-3 gap-16">
-                    <a className="text-center relative" href="https://www.youtube.com/shorts/VWYRhJbZ80A" rel="noreferrer">
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/VWYRhJbZ80A" target="_blank" rel="noreferrer">
                         <img src="/casestudies/olive/7.png" className="col-span-1 hover:blur-sm" />
                         <p style={{
                             position: 'absolute',
@@ -106,7 +106,7 @@ export default function Arezo() {
                             transform: 'translate(-50%, -50%)',
                             }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
                     </a>
-                    <a className="text-center relative" href="https://www.youtube.com/shorts/tw7kAk9hSI0" rel="noreferrer">
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/tw7kAk9hSI0" target="_blank" rel="noreferrer">
                         <img src="/casestudies/olive/8.png" className="col-span-1 hover:blur-sm" />
                         <p style={{
                             position: 'absolute',
@@ -115,7 +115,7 @@ export default function Arezo() {
                             transform: 'translate(-50%, -50%)',
                             }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
                     </a>
-                    <a className="text-center relative" href="https://www.youtube.com/shorts/jc0OpBFaIKA" rel="noreferrer">
+                    <a className="text-center relative" href="https://www.youtube.com/shorts/jc0OpBFaIKA" target="_blank" rel="noreferrer">
                         <img src="/casestudies/olive/9.png" className="col-span-1 hover:blur-sm" />
                         <p style={{
                             position: 'absolute',

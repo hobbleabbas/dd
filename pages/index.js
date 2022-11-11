@@ -140,7 +140,7 @@ export default function Home() {
             title = {JSON.stringify(["FGC Introduces", "Premium Products Developed", "& Produced in Toronto"])}
             sub_title = "Friday Grooming Co."
             link_text = "See case study"
-            link_href = "/case-study/friday-grooming"
+            link_href = "/case-study/friday-grooming-co"
             image_src = "fridaygrooming.png"
           />
           <Card 
@@ -158,7 +158,7 @@ export default function Home() {
             image_src = "xanaintl.png"
           />
           <Card 
-            title = {JSON.stringify(["Automation & Digital", "Transformations -", "Working Through Exceedingly", "Complex Technical Challenges"])}
+            title = {JSON.stringify(["Envisioning", "Blissful Moments"])}
             sub_title = "Bliss Beginnings"
             link_text = "See case study"
             link_href = "/case-study/bliss-beginnings"

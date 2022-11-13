@@ -9,10 +9,9 @@ import fourthImage from "../../public/casestudies/fgc/4.jpg";
 import fifthImage from "../../public/casestudies/fgc/5.jpg";
 import sixthImage from "../../public/casestudies/fgc/6.jpg";
 import seventhImage from "../../public/casestudies/fgc/7.jpg";
-import eighthImage from "../../public/casestudies/fgc/8.jpg";
+import eighthImage from "../../public/casestudies/fgc/8.JPG";
 import ninthImage from "../../public/casestudies/fgc/9.jpg";
 import tenthImage from "../../public/casestudies/fgc/10.jpg";
-import eleventhImage from "../../public/casestudies/fgc/11.jpg";
 
 export default function Arezo() {
 

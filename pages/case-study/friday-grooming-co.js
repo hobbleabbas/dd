@@ -12,6 +12,7 @@ import seventhImage from "../../public/casestudies/fgc/7.jpg";
 import eighthImage from "../../public/casestudies/fgc/8.JPG";
 import ninthImage from "../../public/casestudies/fgc/9.jpg";
 import tenthImage from "../../public/casestudies/fgc/10.jpg";
+import eleventhImage from "../../public/casestudies/fgc/11.jpg";
 
 export default function Arezo() {
 
@@ -104,54 +105,59 @@ export default function Arezo() {
             </div>
 
             <div className="p-4 sm:p-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <div style={{
-                    backgroundImage: `url(${sixthImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    
-                    }}>
-                    <div className="h-108 w-full">
-                    </div>
+
+                <div>
+                    <img style={{
+                        objectFit: 'cover',
+                        width: '100%',
+                        height: '100%'
+                    }} src={sixthImage.src} />
                 </div>
 
-                <div style={{
-                    backgroundImage: `url(${seventhImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    
-                    }}>
-                    <div className="h-108 w-full">
-                    </div>
+                <div>
+                    <img style={{
+                        objectFit: 'cover',
+                        width: '100%',
+                        height: '100%'
+                    }} src={seventhImage.src} />
                 </div>
+
             </div>
 
             <div className="px-36 sm:px-48 md:px-96">
                 <img src={eighthImage.src} />
             </div>
 
+            
             <div className="p-4 sm:p-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <div style={{
-                    backgroundImage: `url(${ninthImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    
-                    }}>
-                    <div className="h-108 w-full">
-                    </div>
+                
+                <div>
+                    <img style={{
+                        objectFit: 'cover',
+                        width: '100%',
+                        height: '100%'
+                    }} src={ninthImage.src} />
                 </div>
 
-                <div style={{
-                    backgroundImage: `url(${tenthImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    
-                    }}>
-                    <div className="h-108 w-full">
-                    </div>
+                <div>
+                    <img style={{
+                        objectFit: 'cover',
+                        width: '100%',
+                        height: '100%'
+                    }} src={tenthImage.src} />
+                </div>
+
+               
+            </div>
+
+            <div style={{
+                backgroundImage: `url(${eleventhImage.src})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+                
+                }}>
+                <div className="h-screen w-full">
                 </div>
             </div>
 

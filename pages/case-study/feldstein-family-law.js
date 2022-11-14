@@ -43,7 +43,7 @@ export default function Arezo() {
                             top: '50%',
                             left: '50%',
                             transform: 'translate(-50%, -50%)',
-                            }} className='text-white uppercase font-extrabold text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                            }} className='text-white uppercase font-semibold text-3xl sm:text-4xl lg:text-6xl'>Play</p>
                     </a>
                     <a href="https://www.youtube.com/watch?v=fkS10Odb7Oc" className="text-center relative bg-white h-108 w-[13rem] md:h-144 md:w-[17rem]">
                         <img src="/casestudies/feldstein/2.png" className="col-span-1 hover:blur-sm" />
@@ -52,7 +52,7 @@ export default function Arezo() {
                             top: '50%',
                             left: '50%',
                             transform: 'translate(-50%, -50%)',
-                            }} className='text-white uppercase font-extrabold text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                            }} className='text-white uppercase font-semibold text-3xl sm:text-4xl lg:text-6xl'>Play</p>
                     </a>
                     <a href="https://www.youtube.com/watch?v=JLPVSnmA0F4" className="text-center relative bg-white h-108 w-[13rem] md:h-144 md:w-[17rem]">
                         <img src="/casestudies/feldstein/3.png" className="col-span-1 hover:blur-sm" />
@@ -61,7 +61,7 @@ export default function Arezo() {
                             top: '50%',
                             left: '50%',
                             transform: 'translate(-50%, -50%)',
-                            }} className='text-white uppercase font-extrabold text-3xl sm:text-4xl lg:text-6xl'>Play</p>
+                            }} className='text-white uppercase font-semibold tracking-wider text-3xl sm:text-4xl lg:text-6xl'>Play</p>
                     </a>
                 </div>
             </div>

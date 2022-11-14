@@ -54,36 +54,18 @@ export default function Arezo() {
                     </div>
                 </div>
             </a>
-            
-            <div className="my-12 sm:my-16 mx-12 sm:mx-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div style={{
-                    backgroundImage: `url(${secondImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    }} className=" border border-gray-400 border-2">
-                    <div className="h-72 sm:h-128 md:h-144 w-full">
-                    </div>
+
+            <div className="my-12 sm:my-16 mx-12 sm:mx-16 grid grid-cols-1 sm:grid-cols-3 gap-16">
+                <div className="flex justify-center">
+                    <img src={secondImage.src} />
                 </div>
 
-                <div style={{
-                    backgroundImage: `url(${thirdImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    }} className="">
-                    <div className="h-72 sm:h-128 md:h-144 w-full">
-                    </div>
+                <div className="flex justify-center">
+                    <img src={thirdImage.src} />
                 </div>
 
-                <div style={{
-                    backgroundImage: `url(${fourthImage.src})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
-                    }} className=" border border-gray-400 border-2">
-                    <div className="h-72 sm:h-128 md:h-144 w-full">
-                    </div>
+                <div className="flex justify-center">
+                    <img src={fourthImage.src} />
                 </div>
             </div>
 

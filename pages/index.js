@@ -73,7 +73,7 @@ export default function Home() {
             sub_title = "Maison De Fleurs"
             link_text = "See case study"
             link_href = "/case-study/maison-de-fleurs"
-            image_src = "yourbrand.png"
+            image_src = "maison.png"
           />
           <Card 
             title = {JSON.stringify(["A Lifestyle: Imagining A", "Better Place"])}

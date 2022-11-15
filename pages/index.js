@@ -182,11 +182,11 @@ export default function Home() {
       <div className="p-24">
         <div>
           <div className="text-center sm:px-24 md:px-36 lg:px-48 pb-16">
-            <SubTitle text={"Olive Tree Jewelry"} />
+            <SubTitle text={"Maison De Fleurs"} />
             <div className="mb-8" />
-            <PageTitle text = "Jewelry That Reflects Who You Are & Where You Are From" />
+            <PageTitle text = "Blossoming Aesthetics. A Floral Shop On A Mission" />
             <div className="m-12" />
-            <DDLink text={"See case study"} href="/case-study/olive-tree-jewelry" defaultUnderlined={true} />
+            <DDLink text={"See case study"} href="/case-study/maison-de-fleurs" defaultUnderlined={true} />
           </div>
         </div>
       </div>

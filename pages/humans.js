@@ -52,7 +52,8 @@ const people = [
         title: "Videographer",
         image: "/abbasmolu.png",
         paragraphs: [
-            "Need BIO",
+            "Abbas always had a passion for videography. Growing up shadowing his photographer father, Abbas always had a passion for creating stunning videos that would create beautiful memories.",
+            "Applying various methods, skills, knowledge, and experience Abbas is able to bring anyones vision to life.",
         ]
     },
     { 

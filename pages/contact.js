@@ -21,7 +21,7 @@ export default function Contact() {
             <form method="POST" action="https://getform.io/f/e09db19a-dfe8-46de-8932-a0eba7d4dbc9" className="flex flex-col space-y-6 px-12 sm:px-24 md:px-36 my-16 mb-1">
                 <Input type="text" name="name" placeholder="Tiger Woods" label = "Your full name *" required = {true} />
                 <Input type="email" name="email" placeholder="tiger@golf.com" label = "The best email you can be reached at *" required = {true} />
-                <Input type = "text" name="subject" placeholder={"Photography, web design"} label = "What are you interested in? *" required = {true} />
+                <Input type = "text" name="subject" placeholder={"Content creation, website design"} label = "What are you interested in? *" required = {true} />
                 <div>
                     <label htmlFor="label" className="text-white text-sm uppercase font-semibold">Message (Optional)</label>
                     <textarea 

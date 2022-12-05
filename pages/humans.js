@@ -20,16 +20,16 @@ const people = [
             "Sarfaraaz’s belief is, in order to be happy, we must start each day with a positive attitude by controlling the things we choose to think about, and focusing on the now. He believes happiness comes from working your hardest for others and watching what you produce, put a smile on others peoples faces."
         ]
     },
-    { 
-        name: "Sana Saidi",
-        title: "Creative Director",
-        image: "/sana1.png",
-        paragraphs: [
-            "Sana is a designer and visual communicator who has been active in the creative industry for 5+ years. She comes from a wide range of disciplines, Direction, Photography, Design, and Philosophy, and it is through these skills she ignites her creative practice. As a designer, Sana finds meaning in her process, understanding all her design decisions and exploring all possible options to create the best possible outcomes for her clients, which further helps her to value her craft.",
-            "Prior to joining Digital Dash in 2021, Sana was the founder of an independant practise where she worked with some of the country's leading brands: Bottega, GLDN Hour, Tangerine and Infiniti, to name a few.",
-            "As the Creative Director, Sana directs all aspects of the branding process, from Brand Strategy, to Brand Voice, through to creative execution. Sana believes in building long-term relationships and she does that by producing quality work her clients love."
-        ]
-    },
+    // { 
+    //     name: "Sana Saidi",
+    //     title: "Creative Director",
+    //     image: "/sana1.png",
+    //     paragraphs: [
+    //         "Sana is a designer and visual communicator who has been active in the creative industry for 5+ years. She comes from a wide range of disciplines, Direction, Photography, Design, and Philosophy, and it is through these skills she ignites her creative practice. As a designer, Sana finds meaning in her process, understanding all her design decisions and exploring all possible options to create the best possible outcomes for her clients, which further helps her to value her craft.",
+    //         "Prior to joining Digital Dash in 2021, Sana was the founder of an independant practise where she worked with some of the country's leading brands: Bottega, GLDN Hour, Tangerine and Infiniti, to name a few.",
+    //         "As the Creative Director, Sana directs all aspects of the branding process, from Brand Strategy, to Brand Voice, through to creative execution. Sana believes in building long-term relationships and she does that by producing quality work her clients love."
+    //     ]
+    // },
     { 
         name: "Annar Layla Teja",
         title: "Research Coordinator",
@@ -38,15 +38,15 @@ const people = [
             "Focused on writing, editing, and publishing content for niches to promote growth and engagement for a business. Experienced in staying up to date with changing trend patterns, new platform updates or features to create a strategy catered to each business to meet their needs. Optimizing social media outlets to relay the business as knowledgeable and skillful using content specific to their industry and brand. Applying various methods, skills, knowledge, and experience to achieve a larger reach and new leads for clients. Monitoring multiple social media outlets, posts, and advertisements to achieve specific objectives to expand the business.",
         ]
     },
-    { 
-        name: "Maryam Shah",
-        title: "Director of Client Services",
-        image: "/maryamshah.png",
-        paragraphs: [
-            "Raised in Montreal, Maryam worked in the Fashion Industry as a fashion stylist and has extensive experience in project management. Maryam is responsible for leading the planning team at Digital Dash.",
-            "Maryam holds a degree in Fashion from The Metropolitan University (formerly known as Ryerson University)"
-        ]
-    },
+    // { 
+    //     name: "Maryam Shah",
+    //     title: "Director of Client Services",
+    //     image: "/maryamshah.png",
+    //     paragraphs: [
+    //         "Raised in Montreal, Maryam worked in the Fashion Industry as a fashion stylist and has extensive experience in project management. Maryam is responsible for leading the planning team at Digital Dash.",
+    //         "Maryam holds a degree in Fashion from The Metropolitan University (formerly known as Ryerson University)"
+    //     ]
+    // },
     { 
         name: "Abbas Molu",
         title: "Videographer",
